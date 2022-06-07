@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+
+    <changeSet id="update-netflow-data" author="sbaichoo">
+        <loadData
+            file="config/liquibase/fake-data/netflow.csv"
+            separator=";"
+            tableName="netflow"
+            usePreparedStatements="true">
+            <column name="id" type="numeric"/>
+            <column name="date_first_seen" type="date"/>
+            <column name="time_first_seen" type="string"/>
+            <column name="duration" type="numeric"/>
+            <column name="protocol" type="string"/>
+            <column name="src_ip" type="string"/>
+            <column name="dst_ip" type="string"/>
+            <column name="flags" type="string"/>
+            <column name="tos" type="numeric"/>
+            <column name="packet_no" type="numeric"/>
+            <column name="bytes" type="string"/>
+            <column name="pps" type="string"/>
+            <column name="bps" type="string"/>
+            <column name="bpp" type="string"/>
+            <column name="flows" type="string"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+
+
+</databaseChangeLog>

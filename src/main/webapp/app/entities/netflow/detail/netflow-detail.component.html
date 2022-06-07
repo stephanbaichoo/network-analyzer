@@ -1,0 +1,84 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="netflow">
+      <h2 data-cy="netflowDetailsHeading"><span>Netflow</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span>ID</span></dt>
+        <dd>
+          <span>{{ netflow.id }}</span>
+        </dd>
+        <dt><span>Date First Seen</span></dt>
+        <dd>
+          <span>{{ netflow.dateFirstSeen | formatMediumDate }}</span>
+        </dd>
+        <dt><span>Time First Seen</span></dt>
+        <dd>
+          <span>{{ netflow.timeFirstSeen }}</span>
+        </dd>
+        <dt><span>Duration</span></dt>
+        <dd>
+          <span>{{ netflow.duration }}</span>
+        </dd>
+        <dt><span>Protocol</span></dt>
+        <dd>
+          <span>{{ netflow.protocol }}</span>
+        </dd>
+        <dt><span>Src Ip</span></dt>
+        <dd>
+          <span>{{ netflow.srcIp }}</span>
+        </dd>
+        <dt><span>Dst Ip</span></dt>
+        <dd>
+          <span>{{ netflow.dstIp }}</span>
+        </dd>
+        <dt><span>Flags</span></dt>
+        <dd>
+          <span>{{ netflow.flags }}</span>
+        </dd>
+        <dt><span>Tos</span></dt>
+        <dd>
+          <span>{{ netflow.tos }}</span>
+        </dd>
+        <dt><span>Packet No</span></dt>
+        <dd>
+          <span>{{ netflow.packetNo }}</span>
+        </dd>
+        <dt><span>Bytes</span></dt>
+        <dd>
+          <span>{{ netflow.bytes }}</span>
+        </dd>
+        <dt><span>Pps</span></dt>
+        <dd>
+          <span>{{ netflow.pps }}</span>
+        </dd>
+        <dt><span>Bps</span></dt>
+        <dd>
+          <span>{{ netflow.bps }}</span>
+        </dd>
+        <dt><span>Bpp</span></dt>
+        <dd>
+          <span>{{ netflow.bpp }}</span>
+        </dd>
+        <dt><span>Flows</span></dt>
+        <dd>
+          <span>{{ netflow.flows }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/netflow', netflow.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

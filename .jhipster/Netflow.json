@@ -1,0 +1,68 @@
+{
+  "changelogDate": "20220605132830",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "dateFirstSeen",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "timeFirstSeen",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "duration",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "protocol",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "srcIp",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dstIp",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "flags",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tos",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "packetNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "bytes",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "pps",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bps",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bpp",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "flows",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Netflow",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

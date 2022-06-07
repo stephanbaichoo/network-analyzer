@@ -1,0 +1,122 @@
+<div>
+  <h2 id="page-heading" data-cy="NetflowHeading">
+    <span>Netflows</span>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info me-2" (click)="loadPage()" [disabled]="isLoading">
+        <fa-icon icon="sync" [spin]="isLoading"></fa-icon>
+        <span>Refresh List</span>
+      </button>
+
+      <button
+        id="jh-create-entity"
+        data-cy="entityCreateButton"
+        class="btn btn-primary jh-create-entity create-netflow"
+        [routerLink]="['/netflow/new']"
+      >
+        <fa-icon icon="plus"></fa-icon>
+        <span> Create a new Netflow </span>
+      </button>
+    </div>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+  <div class="alert alert-warning" id="no-result" *ngIf="netflows?.length === 0">
+    <span>No netflows found</span>
+  </div>
+
+  <div class="table-responsive" id="entities" *ngIf="netflows && netflows.length > 0">
+    <table class="table table-striped" aria-describedby="page-heading">
+      <thead>
+        <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" (sortChange)="loadPage()">
+          <th scope="col" jhiSortBy="id"><span>ID</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="dateFirstSeen"><span>Date First Seen</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="timeFirstSeen"><span>Time First Seen</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="duration"><span>Duration</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="protocol"><span>Protocol</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="srcIp"><span>Src Ip</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="dstIp"><span>Dst Ip</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="flags"><span>Flags</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="tos"><span>Tos</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="packetNo"><span>Packet No</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="bytes"><span>Bytes</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="pps"><span>Pps</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="bps"><span>Bps</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="bpp"><span>Bpp</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="flows"><span>Flows</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let netflow of netflows; trackBy: trackId" data-cy="entityTable">
+          <td>
+            <a [routerLink]="['/netflow', netflow.id, 'view']">{{ netflow.id }}</a>
+          </td>
+          <td>{{ netflow.dateFirstSeen | formatMediumDate }}</td>
+          <td>{{ netflow.timeFirstSeen }}</td>
+          <td>{{ netflow.duration }}</td>
+          <td>{{ netflow.protocol }}</td>
+          <td>{{ netflow.srcIp }}</td>
+          <td>{{ netflow.dstIp }}</td>
+          <td>{{ netflow.flags }}</td>
+          <td>{{ netflow.tos }}</td>
+          <td>{{ netflow.packetNo }}</td>
+          <td>{{ netflow.bytes }}</td>
+          <td>{{ netflow.pps }}</td>
+          <td>{{ netflow.bps }}</td>
+          <td>{{ netflow.bpp }}</td>
+          <td>{{ netflow.flows }}</td>
+          <td class="text-end">
+            <div class="btn-group">
+              <button
+                type="submit"
+                [routerLink]="['/netflow', netflow.id, 'view']"
+                class="btn btn-info btn-sm"
+                data-cy="entityDetailsButton"
+              >
+                <fa-icon icon="eye"></fa-icon>
+                <span class="d-none d-md-inline">View</span>
+              </button>
+
+              <button
+                type="submit"
+                [routerLink]="['/netflow', netflow.id, 'edit']"
+                class="btn btn-primary btn-sm"
+                data-cy="entityEditButton"
+              >
+                <fa-icon icon="pencil-alt"></fa-icon>
+                <span class="d-none d-md-inline">Edit</span>
+              </button>
+
+              <button type="submit" (click)="delete(netflow)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
+                <fa-icon icon="times"></fa-icon>
+                <span class="d-none d-md-inline">Delete</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div *ngIf="netflows && netflows.length > 0">
+    <div class="d-flex justify-content-center">
+      <jhi-item-count [params]="{ page: page, totalItems: totalItems, itemsPerPage: itemsPerPage }"></jhi-item-count>
+    </div>
+
+    <div class="d-flex justify-content-center">
+      <ngb-pagination
+        [collectionSize]="totalItems"
+        [(page)]="ngbPaginationPage"
+        [pageSize]="itemsPerPage"
+        [maxSize]="5"
+        [rotate]="true"
+        [boundaryLinks]="true"
+        (pageChange)="loadPage($event)"
+      ></ngb-pagination>
+    </div>
+  </div>
+</div>
