@@ -11,11 +11,11 @@ public class FileCommandRunner {
     private static final String csvDirectory = "";
 
     public void cutAllCSVFiles(String csvDirectory) {
-        runCommand(String.format("mv %s/*.csv target", csvDirectory));
+        runCommand(String.format("mv %s/*.csv /target", csvDirectory));
     }
 
     @SneakyThrows
-    private void runCommand(String cmd) {
+    public void runCommand(String cmd) {
         Runtime r = Runtime.getRuntime();
 
         String[] commands = { "bash", "-c", cmd };
@@ -24,7 +24,7 @@ public class FileCommandRunner {
         p.waitFor();
     }
 
-    private String buildListCmd(List<String> cmds) {
+    public String buildListCmd(List<String> cmds) {
         return cmds.stream().map(cmd -> cmd.concat(" ;")).collect(Collectors.joining());
     }
 }
