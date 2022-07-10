@@ -10,7 +10,9 @@ public class FileCommandRunner {
 
     private static final String csvDirectory = "";
 
-    public void cutAllCSVFiles(String csvDirectory) {}
+    public void cutAllCSVFiles(String csvDirectory) {
+        runCommand("mv *.csv target");
+    }
 
     @SneakyThrows
     private void runCommand(String cmd) {
