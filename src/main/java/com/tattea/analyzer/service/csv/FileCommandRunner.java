@@ -11,7 +11,7 @@ public class FileCommandRunner {
     private static final String csvDirectory = "";
 
     public void cutAllCSVFiles(String csvDirectory) {
-        runCommand("mv *.csv target");
+        runCommand(String.format("mv %s/*.csv target", csvDirectory));
     }
 
     @SneakyThrows

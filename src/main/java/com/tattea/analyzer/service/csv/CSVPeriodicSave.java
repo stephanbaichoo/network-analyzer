@@ -28,12 +28,19 @@ public class CSVPeriodicSave {
     private final CSVFileReader csvFileReader;
     private final NetflowService netflowService;
     private final EntityMapper<NetflowDTO, Netflow> entityMapper;
+    private final FileCommandRunner fileCommandRunner;
 
     @Autowired
-    public CSVPeriodicSave(CSVFileReader csvFileReader, NetflowService netflowService, EntityMapper<NetflowDTO, Netflow> entityMapper) {
+    public CSVPeriodicSave(
+        CSVFileReader csvFileReader,
+        NetflowService netflowService,
+        EntityMapper<NetflowDTO, Netflow> entityMapper,
+        FileCommandRunner fileCommandRunner
+    ) {
         this.csvFileReader = csvFileReader;
         this.netflowService = netflowService;
         this.entityMapper = entityMapper;
+        this.fileCommandRunner = fileCommandRunner;
     }
 
     /*
@@ -41,15 +48,21 @@ public class CSVPeriodicSave {
     * Then, after successful save into the MySQL database, we can query the data afterwards
 
      */
-    @Scheduled(cron = "*/10 * * * * *") // will save each 10 minutes for eg : "*/10 * * * * *"
+    @Scheduled(cron = "*/10 * * * * *") // will save each 10 seconds for eg : "*/10 * * * * *"
     public void triggerAllCSVSave() {
         log.info("CSV Save at : {}", LocalDateTime.now().toString()); // create a log in order to debug/check if the saves are successful
 
-        getAllCSVFromDirectory()
-            .stream()
-            .map(File::getAbsolutePath) // get path from each file
-            .flatMap(csvPath -> csvFileReader.getNetflows(csvPath).stream()) // get netflow data from each file
-            .forEach(netflowService::save);
+        try {
+            getAllCSVFromDirectory()
+                .stream()
+                .map(File::getAbsolutePath) // get path from each file
+                .flatMap(csvPath -> csvFileReader.getNetflows(csvPath).stream()) // get netflow data from each file
+                .forEach(netflowService::save);
+
+            fileCommandRunner.cutAllCSVFiles(csvDirectory);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public List<File> getAllCSVFromDirectory() {
