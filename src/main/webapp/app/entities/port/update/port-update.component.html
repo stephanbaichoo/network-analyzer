@@ -1,0 +1,69 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+      <h2 id="jhi-port-heading" data-cy="PortCreateUpdateHeading">Create or edit a Port</h2>
+
+      <div>
+        <jhi-alert-error></jhi-alert-error>
+
+        <div class="row mb-3" [hidden]="editForm.get('id')!.value == null">
+          <label class="form-label" for="field_id">ID</label>
+          <input type="number" class="form-control" name="id" id="field_id" data-cy="id" formControlName="id" [readonly]="true" />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" for="field_port">Port</label>
+          <input type="number" class="form-control" name="port" id="field_port" data-cy="port" formControlName="port" />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" for="field_isTCP">Is TCP</label>
+          <input type="text" class="form-control" name="isTCP" id="field_isTCP" data-cy="isTCP" formControlName="isTCP" />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" for="field_isUDP">Is UDP</label>
+          <input type="text" class="form-control" name="isUDP" id="field_isUDP" data-cy="isUDP" formControlName="isUDP" />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" for="field_isSCTP">Is SCTP</label>
+          <input type="text" class="form-control" name="isSCTP" id="field_isSCTP" data-cy="isSCTP" formControlName="isSCTP" />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" for="field_description">Description</label>
+          <input
+            type="text"
+            class="form-control"
+            name="description"
+            id="field_description"
+            data-cy="description"
+            formControlName="description"
+          />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" for="field_name">Name</label>
+          <input type="text" class="form-control" name="name" id="field_name" data-cy="name" formControlName="name" />
+        </div>
+      </div>
+
+      <div>
+        <button type="button" id="cancel-save" data-cy="entityCreateCancelButton" class="btn btn-secondary" (click)="previousState()">
+          <fa-icon icon="ban"></fa-icon>&nbsp;<span>Cancel</span>
+        </button>
+
+        <button
+          type="submit"
+          id="save-entity"
+          data-cy="entityCreateSaveButton"
+          [disabled]="editForm.invalid || isSaving"
+          class="btn btn-primary"
+        >
+          <fa-icon icon="save"></fa-icon>&nbsp;<span>Save</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

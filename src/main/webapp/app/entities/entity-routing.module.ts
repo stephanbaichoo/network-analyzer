@@ -9,6 +9,11 @@ import { RouterModule } from '@angular/router';
         data: { pageTitle: 'Netflows' },
         loadChildren: () => import('./netflow/netflow.module').then(m => m.NetflowModule),
       },
+      {
+        path: 'port',
+        data: { pageTitle: 'Ports' },
+        loadChildren: () => import('./port/port.module').then(m => m.PortModule),
+      },
       /* jhipster-needle-add-entity-route - JHipster will add entity modules routes here */
     ]),
   ],

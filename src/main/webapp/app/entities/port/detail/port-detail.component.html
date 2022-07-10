@@ -1,0 +1,52 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="port">
+      <h2 data-cy="portDetailsHeading"><span>Port</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span>ID</span></dt>
+        <dd>
+          <span>{{ port.id }}</span>
+        </dd>
+        <dt><span>Port</span></dt>
+        <dd>
+          <span>{{ port.port }}</span>
+        </dd>
+        <dt><span>Is TCP</span></dt>
+        <dd>
+          <span>{{ port.isTCP }}</span>
+        </dd>
+        <dt><span>Is UDP</span></dt>
+        <dd>
+          <span>{{ port.isUDP }}</span>
+        </dd>
+        <dt><span>Is SCTP</span></dt>
+        <dd>
+          <span>{{ port.isSCTP }}</span>
+        </dd>
+        <dt><span>Description</span></dt>
+        <dd>
+          <span>{{ port.description }}</span>
+        </dd>
+        <dt><span>Name</span></dt>
+        <dd>
+          <span>{{ port.name }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/port', port.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

@@ -18,6 +18,7 @@
     <include file="config/liquibase/changelog/20220605132830_added_entity_Netflow.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20220605140000_delete_data_added_new_data_netflow.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20220605150000_delete_data_added_new_data_netflow.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220710132215_added_entity_Port.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->

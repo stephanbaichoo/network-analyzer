@@ -1,0 +1,36 @@
+{
+  "changelogDate": "20220710132215",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "port",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "isTCP",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isUDP",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isSCTP",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "Port",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}
