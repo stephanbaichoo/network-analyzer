@@ -1,6 +1,7 @@
 package com.tattea.analyzer;
 
 import com.tattea.analyzer.config.ApplicationProperties;
+import com.tattea.analyzer.service.port.PortScrapper;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Arrays;
@@ -10,6 +11,7 @@ import javax.annotation.PostConstruct;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties;
@@ -20,14 +22,17 @@ import tech.jhipster.config.JHipsterConstants;
 
 @SpringBootApplication
 @EnableConfigurationProperties({ LiquibaseProperties.class, ApplicationProperties.class })
-public class AnalyzerApp {
+public class AnalyzerApp implements CommandLineRunner {
 
     private static final Logger log = LoggerFactory.getLogger(AnalyzerApp.class);
 
     private final Environment env;
 
-    public AnalyzerApp(Environment env) {
+    private final PortScrapper portScrapper;
+
+    public AnalyzerApp(Environment env, PortScrapper portScrapper) {
         this.env = env;
+        this.portScrapper = portScrapper;
     }
 
     /**
@@ -99,5 +104,10 @@ public class AnalyzerApp {
             contextPath,
             env.getActiveProfiles().length == 0 ? env.getDefaultProfiles() : env.getActiveProfiles()
         );
+    }
+
+    @Override
+    public void run(String... args) throws Exception {
+        portScrapper.buildPorts();
     }
 }

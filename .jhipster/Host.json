@@ -1,0 +1,28 @@
+{
+  "changelogDate": "20220713181342",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "hostName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ipAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "asname",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "org",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "Host",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

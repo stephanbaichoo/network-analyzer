@@ -50,6 +50,7 @@ public class CacheConfiguration {
             createCache(cm, com.tattea.analyzer.domain.User.class.getName() + ".authorities");
             createCache(cm, com.tattea.analyzer.domain.Netflow.class.getName());
             createCache(cm, com.tattea.analyzer.domain.Port.class.getName());
+            createCache(cm, com.tattea.analyzer.domain.Host.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

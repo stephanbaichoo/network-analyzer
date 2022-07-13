@@ -4,12 +4,16 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Objects;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.NoArgsConstructor;
 
 /**
  * A DTO for the {@link com.tattea.analyzer.domain.Netflow} entity.
  */
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class NetflowDTO implements Serializable {
 
     private Long id;

@@ -1,0 +1,52 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+      <h2 id="jhi-host-heading" data-cy="HostCreateUpdateHeading">Create or edit a Host</h2>
+
+      <div>
+        <jhi-alert-error></jhi-alert-error>
+
+        <div class="row mb-3" [hidden]="editForm.get('id')!.value == null">
+          <label class="form-label" for="field_id">ID</label>
+          <input type="number" class="form-control" name="id" id="field_id" data-cy="id" formControlName="id" [readonly]="true" />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" for="field_hostName">Host Name</label>
+          <input type="text" class="form-control" name="hostName" id="field_hostName" data-cy="hostName" formControlName="hostName" />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" for="field_ipAddress">Ip Address</label>
+          <input type="text" class="form-control" name="ipAddress" id="field_ipAddress" data-cy="ipAddress" formControlName="ipAddress" />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" for="field_asname">Asname</label>
+          <input type="text" class="form-control" name="asname" id="field_asname" data-cy="asname" formControlName="asname" />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" for="field_org">Org</label>
+          <input type="text" class="form-control" name="org" id="field_org" data-cy="org" formControlName="org" />
+        </div>
+      </div>
+
+      <div>
+        <button type="button" id="cancel-save" data-cy="entityCreateCancelButton" class="btn btn-secondary" (click)="previousState()">
+          <fa-icon icon="ban"></fa-icon>&nbsp;<span>Cancel</span>
+        </button>
+
+        <button
+          type="submit"
+          id="save-entity"
+          data-cy="entityCreateSaveButton"
+          [disabled]="editForm.invalid || isSaving"
+          class="btn btn-primary"
+        >
+          <fa-icon icon="save"></fa-icon>&nbsp;<span>Save</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
