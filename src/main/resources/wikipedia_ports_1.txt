@@ -1,0 +1,3201 @@
+<table class="wikitable sortable collapsible mw-collapsible mw-made-collapsible jquery-tablesorter">
+                         <caption>Well-known ports
+                         <span class="mw-collapsible-toggle mw-collapsible-toggle-default" role="button" tabindex="0" aria-expanded="true"><a class="mw-collapsible-text">hide</a></span></caption>
+                         <thead><tr>
+                         <th scope="col" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Port
+                         </th>
+                         <th scope="col" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">TCP
+                         </th>
+                         <th scope="col" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">UDP
+                         </th>
+                         <th scope="col" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">SCTP
+                         </th>
+                         <th scope="col" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">DCCP
+                         </th>
+                         <th scope="col" class="unsortable">Description
+                         </th></tr></thead><tbody>
+<tr>
+<td>0</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">Reserved</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">Reserved</td>
+<td></td>
+<td>
+</td>
+<td>In programming APIs (not in communication between hosts), requests a system-allocated (dynamic) port<sup id="cite_ref-Port_0_Linux_6-0" class="reference"><a href="#cite_note-Port_0_Linux-6">[6]</a></sup>
+</td></tr>
+<tr>
+<td>1</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/TCP_Port_Service_Multiplexer" title="TCP Port Service Multiplexer">TCP Port Service Multiplexer</a> (TCPMUX). Historic. Both TCP and UDP have been assigned to TCPMUX by IANA,<sup id="cite_ref-IANA_2-2" class="reference"><a href="#cite_note-IANA-2">[2]</a></sup> but by design only TCP is specified.<sup id="cite_ref-rfc1078_7-0" class="reference"><a href="#cite_note-rfc1078-7">[7]</a></sup>
+</td></tr>
+<tr>
+<td>2</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Compressnet_(Management_Utility)&amp;action=edit&amp;redlink=1" class="new" title="Compressnet (Management Utility) (page does not exist)">compressnet (Management Utility)</a>
+</td></tr>
+<tr>
+<td>3</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Compressnet_(Compression_Process)&amp;action=edit&amp;redlink=1" class="new" title="Compressnet (Compression Process) (page does not exist)">compressnet (Compression Process)</a>
+</td></tr>
+<tr>
+<td>5</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Remote_Job_Entry" class="mw-redirect" title="Remote Job Entry">Remote Job Entry</a><sup id="cite_ref-rfc407_8-0" class="reference"><a href="#cite_note-rfc407-8">[8]</a></sup> was historically using socket 5 in its <a href="/wiki/Network_socket#History" title="Network socket">old socket form</a>, while <a href="/wiki/Management_information_base" title="Management information base">MIB</a> <a href="/wiki/Protocol_Independent_Multicast" title="Protocol Independent Multicast">PIM</a> has identified it as TCP/5<sup id="cite_ref-rfc2896_9-0" class="reference"><a href="#cite_note-rfc2896-9">[9]</a></sup> and IANA has assigned both TCP and UDP 5 to it.
+</td></tr>
+<tr>
+<td>7</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Echo_Protocol" title="Echo Protocol">Echo Protocol</a><sup id="cite_ref-rfc862_10-0" class="reference"><a href="#cite_note-rfc862-10">[10]</a></sup><sup id="cite_ref-apple-kb-HT202944_11-0" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup>
+</td></tr>
+<tr>
+<td rowspan="2">9
+</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes<sup id="cite_ref-rfc4960_12-0" class="reference"><a href="#cite_note-rfc4960-12">[12]</a></sup></td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned
+</td>
+<td><a href="/wiki/Discard_Protocol" title="Discard Protocol">Discard Protocol</a><sup id="cite_ref-rfc863_13-0" class="reference"><a href="#cite_note-rfc863-13">[13]</a></sup>
+</td></tr>
+<tr>
+<td style="background:#FFC7C7;vertical-align:middle;text-align:center;" class="table-no">No</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Wake-on-LAN" title="Wake-on-LAN">Wake-on-LAN</a><sup id="cite_ref-msft-tn-bb632665_14-0" class="reference"><a href="#cite_note-msft-tn-bb632665-14">[14]</a></sup>
+</td></tr>
+<tr>
+<td>11</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>Active Users (<a href="/wiki/Systat_(protocol)" title="Systat (protocol)">systat</a> service)<sup id="cite_ref-systat-netstat_15-0" class="reference"><a href="#cite_note-systat-netstat-15">[15]</a></sup><sup id="cite_ref-RFC866_16-0" class="reference"><a href="#cite_note-RFC866-16">[16]</a></sup>
+</td></tr>
+<tr>
+<td>13</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Daytime_Protocol" title="Daytime Protocol">Daytime Protocol</a><sup id="cite_ref-rfc867_17-0" class="reference"><a href="#cite_note-rfc867-17">[17]</a></sup>
+</td></tr>
+<tr>
+<td>15</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td style="background:#FFC7C7;vertical-align:middle;text-align:center;" class="table-no">No</td>
+<td></td>
+<td>
+</td>
+<td>Previously <a href="/wiki/Netstat" title="Netstat">netstat</a> service<sup id="cite_ref-IANA_2-3" class="reference"><a href="#cite_note-IANA-2">[2]</a></sup><sup id="cite_ref-systat-netstat_15-1" class="reference"><a href="#cite_note-systat-netstat-15">[15]</a></sup>
+</td></tr>
+<tr>
+<td>17</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/QOTD" title="QOTD">Quote of the Day</a> (QOTD)<sup id="cite_ref-rfc865_18-0" class="reference"><a href="#cite_note-rfc865-18">[18]</a></sup>
+</td></tr>
+<tr>
+<td>18</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Message_Send_Protocol" title="Message Send Protocol">Message Send Protocol</a><sup id="cite_ref-rfc1159_19-0" class="reference"><a href="#cite_note-rfc1159-19">[19]</a></sup><sup id="cite_ref-rfc1312_20-0" class="reference"><a href="#cite_note-rfc1312-20">[20]</a></sup>
+</td></tr>
+<tr>
+<td>19</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Character_Generator_Protocol" title="Character Generator Protocol">Character Generator Protocol</a> (CHARGEN)<sup id="cite_ref-rfc864_21-0" class="reference"><a href="#cite_note-rfc864-21">[21]</a></sup>
+</td></tr>
+<tr>
+<td>20</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes<sup id="cite_ref-rfc4960_12-1" class="reference"><a href="#cite_note-rfc4960-12">[12]</a></sup></td>
+<td>
+</td>
+<td><a href="/wiki/File_Transfer_Protocol" title="File Transfer Protocol">File Transfer Protocol</a> (FTP) data transfer<sup id="cite_ref-apple-kb-HT202944_11-1" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup>
+</td></tr>
+<tr>
+<td>21</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes<sup id="cite_ref-rfc4960_12-2" class="reference"><a href="#cite_note-rfc4960-12">[12]</a></sup></td>
+<td>
+</td>
+<td>File Transfer Protocol (FTP) control (command)<sup id="cite_ref-apple-kb-HT202944_11-2" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup><sup id="cite_ref-rfc4960_12-3" class="reference"><a href="#cite_note-rfc4960-12">[12]</a></sup><sup id="cite_ref-rfc765_22-0" class="reference"><a href="#cite_note-rfc765-22">[22]</a></sup><sup id="cite_ref-rfc959_23-0" class="reference"><a href="#cite_note-rfc959-23">[23]</a></sup>
+</td></tr>
+<tr>
+<td>22</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes<sup id="cite_ref-rfc4960_12-4" class="reference"><a href="#cite_note-rfc4960-12">[12]</a></sup></td>
+<td>
+</td>
+<td><a href="/wiki/Secure_Shell" title="Secure Shell">Secure Shell</a> (SSH),<sup id="cite_ref-apple-kb-HT202944_11-3" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup> secure logins, <a href="/wiki/File_transfer" title="File transfer">file transfers</a> (<a href="/wiki/Secure_copy" class="mw-redirect" title="Secure copy">scp</a>, <a href="/wiki/SSH_file_transfer_protocol" class="mw-redirect" title="SSH file transfer protocol">sftp</a>) and port forwarding
+</td></tr>
+<tr>
+<td>23</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Telnet" title="Telnet">Telnet</a> protocol—unencrypted text communications<sup id="cite_ref-apple-kb-HT202944_11-4" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup><sup id="cite_ref-rfc854_24-0" class="reference"><a href="#cite_note-rfc854-24">[24]</a></sup>
+</td></tr>
+<tr>
+<td>25</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Simple_Mail_Transfer_Protocol" title="Simple Mail Transfer Protocol">Simple Mail Transfer Protocol</a> (SMTP),<sup id="cite_ref-apple-kb-HT202944_11-5" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup><sup id="cite_ref-rfc821_25-0" class="reference"><a href="#cite_note-rfc821-25">[25]</a></sup> used for email routing between mail servers
+</td></tr>
+<tr>
+<td>27</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=NSW_User_System_FE&amp;action=edit&amp;redlink=1" class="new" title="NSW User System FE (page does not exist)">NSW User System FE</a>
+</td></tr>
+<tr>
+<td>28</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td>Palo Alto Networks' Panorama High Availability (HA) sync encrypted port.<sup id="cite_ref-PAN-OS_HALinksAndBackupLinks_26-0" class="reference"><a href="#cite_note-PAN-OS_HALinksAndBackupLinks-26">[26]</a></sup>
+</td></tr>
+<tr>
+<td>29</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=MSG_ICP&amp;action=edit&amp;redlink=1" class="new" title="MSG ICP (page does not exist)">MSG ICP</a>
+</td></tr>
+<tr>
+<td>31</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=MSG_Authentication&amp;action=edit&amp;redlink=1" class="new" title="MSG Authentication (page does not exist)">MSG Authentication</a>
+</td></tr>
+<tr>
+<td>33</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Display_Support_Protocol&amp;action=edit&amp;redlink=1" class="new" title="Display Support Protocol (page does not exist)">Display Support Protocol</a>
+</td></tr>
+<tr>
+<td>37</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Time_Protocol" title="Time Protocol">Time Protocol</a><sup id="cite_ref-rfc868_27-0" class="reference"><a href="#cite_note-rfc868-27">[27]</a></sup>
+</td></tr>
+<tr>
+<td>38</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Route_Access_Protocol&amp;action=edit&amp;redlink=1" class="new" title="Route Access Protocol (page does not exist)">Route Access Protocol</a>
+</td></tr>
+<tr>
+<td>39</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Resource_Location_Protocol&amp;action=edit&amp;redlink=1" class="new" title="Resource Location Protocol (page does not exist)">Resource Location Protocol</a>
+</td></tr>
+<tr>
+<td>41</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Graphics" title="Graphics">Graphics</a>
+</td></tr>
+<tr>
+<td>42</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/ARPA_Host_Name_Server_Protocol" title="ARPA Host Name Server Protocol">Host Name Server Protocol</a><sup id="cite_ref-ien116_28-0" class="reference"><a href="#cite_note-ien116-28">[28]</a></sup>
+</td></tr>
+<tr>
+<td>43</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/WHOIS" title="WHOIS">WHOIS</a> protocol<sup id="cite_ref-rfc812_29-0" class="reference"><a href="#cite_note-rfc812-29">[29]</a></sup><sup id="cite_ref-rfc954_30-0" class="reference"><a href="#cite_note-rfc954-30">[30]</a></sup><sup id="cite_ref-rfc3912_31-0" class="reference"><a href="#cite_note-rfc3912-31">[31]</a></sup>
+</td></tr>
+<tr>
+<td>44</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=MPM_FLAGS_Protocol&amp;action=edit&amp;redlink=1" class="new" title="MPM FLAGS Protocol (page does not exist)">MPM FLAGS Protocol</a>
+</td></tr>
+<tr>
+<td>45</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=MPM_(recv)&amp;action=edit&amp;redlink=1" class="new" title="MPM (recv) (page does not exist)">MPM (recv)</a>
+</td></tr>
+<tr>
+<td>46</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=MPM_(default_send)&amp;action=edit&amp;redlink=1" class="new" title="MPM (default send) (page does not exist)">MPM (default send)</a>
+</td></tr>
+<tr>
+<td>47</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">Reserved</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">Reserved</td>
+<td></td>
+<td>
+</td>
+<td>
+</td></tr>
+<tr>
+<td>48</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Digital_Audit_Daemon&amp;action=edit&amp;redlink=1" class="new" title="Digital Audit Daemon (page does not exist)">Digital Audit Daemon</a>
+</td></tr>
+<tr>
+<td>49</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/TACACS" title="TACACS">TACACS</a> Login Host protocol.<sup id="cite_ref-rfc1492_32-0" class="reference"><a href="#cite_note-rfc1492-32">[32]</a></sup> <a href="/wiki/TACACS%2B" class="mw-redirect" title="TACACS+">TACACS+</a>, still in draft which is an improved but distinct version of TACACS, only uses TCP 49.<sup id="cite_ref-33" class="reference"><a href="#cite_note-33">[33]</a></sup>
+</td></tr>
+<tr>
+<td>50</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Remote_Mail_Checking_Protocol&amp;action=edit&amp;redlink=1" class="new" title="Remote Mail Checking Protocol (page does not exist)">Remote Mail Checking Protocol</a>
+</td></tr>
+<tr>
+<td>51</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">Reserved</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">Reserved</td>
+<td></td>
+<td>
+</td>
+<td>Historically used for <a href="/wiki/Interface_Message_Processor" title="Interface Message Processor">Interface Message Processor</a> logical address management,<sup id="cite_ref-bbnreport5256_34-0" class="reference"><a href="#cite_note-bbnreport5256-34">[34]</a></sup> entry has been removed by IANA on 2013-05-25
+</td></tr>
+<tr>
+<td>52</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Xerox_Network_Systems" title="Xerox Network Systems">Xerox Network Systems</a> (XNS) Time Protocol. Despite this port being assigned by IANA, the service is meant to work on <a href="/wiki/Sequenced_Packet_Protocol" class="mw-redirect" title="Sequenced Packet Protocol">SPP</a> (ancestor of <a href="/wiki/IPX/SPX" title="IPX/SPX">IPX/SPX</a>), instead of TCP/IP.<sup id="cite_ref-xns_35-0" class="reference"><a href="#cite_note-xns-35">[35]</a></sup>
+</td></tr>
+<tr>
+<td>53</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Domain_Name_System" title="Domain Name System">Domain Name System</a> (DNS)<sup id="cite_ref-rfc1035_36-0" class="reference"><a href="#cite_note-rfc1035-36">[36]</a></sup><sup id="cite_ref-apple-kb-HT202944_11-6" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup>
+</td></tr>
+<tr>
+<td>54</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td>Xerox Network Systems (XNS) Clearinghouse (Name Server). Despite this port being assigned by IANA, the service is meant to work on <a href="/wiki/Sequenced_Packet_Protocol" class="mw-redirect" title="Sequenced Packet Protocol">SPP</a> (ancestor of <a href="/wiki/IPX/SPX" title="IPX/SPX">IPX/SPX</a>), instead of TCP/IP.<sup id="cite_ref-xns_35-1" class="reference"><a href="#cite_note-xns-35">[35]</a></sup>
+</td></tr>
+<tr>
+<td>55</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=ISI_Graphics_Language&amp;action=edit&amp;redlink=1" class="new" title="ISI Graphics Language (page does not exist)">ISI Graphics Language</a>
+</td></tr>
+<tr>
+<td>56</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td>Xerox Network Systems (XNS) Authentication Protocol. Despite this port being assigned by IANA, the service is meant to work on <a href="/wiki/Sequenced_Packet_Protocol" class="mw-redirect" title="Sequenced Packet Protocol">SPP</a> (ancestor of <a href="/wiki/IPX/SPX" title="IPX/SPX">IPX/SPX</a>), instead of TCP/IP.<sup id="cite_ref-xns_35-2" class="reference"><a href="#cite_note-xns-35">[35]</a></sup>
+</td></tr>
+<tr>
+<td>58</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td>Xerox Network Systems (XNS) Mail. Despite this port being assigned by IANA, the service is meant to work on <a href="/wiki/Sequenced_Packet_Protocol" class="mw-redirect" title="Sequenced Packet Protocol">SPP</a> (ancestor of <a href="/wiki/IPX/SPX" title="IPX/SPX">IPX/SPX</a>), instead of TCP/IP.<sup id="cite_ref-xns_35-3" class="reference"><a href="#cite_note-xns-35">[35]</a></sup>
+</td></tr>
+<tr>
+<td>61</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">Reserved</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">Reserved</td>
+<td></td>
+<td>
+</td>
+<td>Historically assigned to the <a href="/w/index.php?title=NIFTP-Based_Mail&amp;action=edit&amp;redlink=1" class="new" title="NIFTP-Based Mail (page does not exist)">NIFTP-Based Mail</a> protocol,<sup id="cite_ref-rfc1060_37-0" class="reference"><a href="#cite_note-rfc1060-37">[37]</a></sup> but was never documented in the related <a href="/wiki/Internet_Experiment_Note" title="Internet Experiment Note">IEN</a>.<sup id="cite_ref-ien169_38-0" class="reference"><a href="#cite_note-ien169-38">[38]</a></sup> The port number entry was removed from IANA's registry on 2017-05-18.<sup id="cite_ref-IANA_2-4" class="reference"><a href="#cite_note-IANA-2">[2]</a></sup>
+</td></tr>
+<tr>
+<td>62</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=ACA_Services&amp;action=edit&amp;redlink=1" class="new" title="ACA Services (page does not exist)">ACA Services</a>
+</td></tr>
+<tr>
+<td>63</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Whois%2B%2B&amp;action=edit&amp;redlink=1" class="new" title="Whois++ (page does not exist)">whois++</a>
+</td></tr>
+<tr>
+<td>64</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Covia" title="Covia">covia</a>
+</td></tr>
+<tr>
+<td>65</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=TACACS-Database_Service&amp;action=edit&amp;redlink=1" class="new" title="TACACS-Database Service (page does not exist)">TACACS-Database Service</a>
+</td></tr>
+<tr>
+<td>66</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Oracle_SQL*NET&amp;action=edit&amp;redlink=1" class="new" title="Oracle SQL*NET (page does not exist)">Oracle SQL*NET</a>
+</td></tr>
+<tr>
+<td>67</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Bootstrap_Protocol" title="Bootstrap Protocol">Bootstrap Protocol</a> (BOOTP) server;<sup id="cite_ref-apple-kb-HT202944_11-7" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup> also used by <a href="/wiki/Dynamic_Host_Configuration_Protocol" title="Dynamic Host Configuration Protocol">Dynamic Host Configuration Protocol</a> (DHCP)
+</td></tr>
+<tr>
+<td>68</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>Bootstrap Protocol (BOOTP) client;<sup id="cite_ref-apple-kb-HT202944_11-8" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup> also used by Dynamic Host Configuration Protocol (DHCP)
+</td></tr>
+<tr>
+<td>69</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Trivial_File_Transfer_Protocol" title="Trivial File Transfer Protocol">Trivial File Transfer Protocol</a> (TFTP)<sup id="cite_ref-apple-kb-HT202944_11-9" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup><sup id="cite_ref-ien133_39-0" class="reference"><a href="#cite_note-ien133-39">[39]</a></sup><sup id="cite_ref-rfc783_40-0" class="reference"><a href="#cite_note-rfc783-40">[40]</a></sup><sup id="cite_ref-rfc1350_41-0" class="reference"><a href="#cite_note-rfc1350-41">[41]</a></sup>
+</td></tr>
+<tr>
+<td>70</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Gopher_(protocol)" title="Gopher (protocol)">Gopher</a> protocol<sup id="cite_ref-rfc1436_42-0" class="reference"><a href="#cite_note-rfc1436-42">[42]</a></sup>
+</td></tr>
+<tr>
+<td>71–74</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/NETRJS" class="mw-redirect" title="NETRJS">NETRJS</a> protocol<sup id="cite_ref-rfc88_43-0" class="reference"><a href="#cite_note-rfc88-43">[43]</a></sup><sup id="cite_ref-rfc740_44-0" class="reference"><a href="#cite_note-rfc740-44">[44]</a></sup><sup id="cite_ref-rfc820_45-0" class="reference"><a href="#cite_note-rfc820-45">[45]</a></sup>
+</td></tr>
+<tr>
+<td>76</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Distributed_External_Object_Store&amp;action=edit&amp;redlink=1" class="new" title="Distributed External Object Store (page does not exist)">Distributed External Object Store</a>
+</td></tr>
+<tr>
+<td>78</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Vettcp&amp;action=edit&amp;redlink=1" class="new" title="Vettcp (page does not exist)">vettcp</a>
+</td></tr>
+<tr>
+<td>79</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Finger_protocol" class="mw-redirect" title="Finger protocol">Finger protocol</a><sup id="cite_ref-apple-kb-HT202944_11-10" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup><sup id="cite_ref-rfc742_46-0" class="reference"><a href="#cite_note-rfc742-46">[46]</a></sup><sup id="cite_ref-rfc1288_47-0" class="reference"><a href="#cite_note-rfc1288-47">[47]</a></sup>
+</td></tr>
+<tr>
+<td>80</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes<sup id="cite_ref-rfc4960_12-5" class="reference"><a href="#cite_note-rfc4960-12">[12]</a></sup></td>
+<td>
+</td>
+<td><a href="/wiki/Hypertext_Transfer_Protocol" title="Hypertext Transfer Protocol">Hypertext Transfer Protocol</a> (HTTP)<sup id="cite_ref-rfc7230_48-0" class="reference"><a href="#cite_note-rfc7230-48">[48]</a></sup><sup id="cite_ref-rfc7540_49-0" class="reference"><a href="#cite_note-rfc7540-49">[49]</a></sup> uses TCP in versions 1.x and 2. <a href="/wiki/HTTP/3" title="HTTP/3">HTTP/3</a> uses <a href="/wiki/QUIC" title="QUIC">QUIC</a>,<sup id="cite_ref-quic_50-0" class="reference"><a href="#cite_note-quic-50">[50]</a></sup> a transport protocol on top of UDP.
+</td></tr>
+<tr>
+<td>81</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/TorPark" class="mw-redirect" title="TorPark">TorPark</a> <a href="/wiki/Onion_routing" title="Onion routing">onion routing</a><sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability"><span title="The material near this tag needs to be fact-checked with the cited source(s). (October 2016)">verification needed</span></a></i>]</sup>
+</td></tr>
+<tr>
+<td rowspan="2">82
+</td>
+<td></td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td>
+</td>
+<td>TorPark control<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability"><span title="The material near this tag needs to be fact-checked with the cited source(s). (October 2016)">verification needed</span></a></i>]</sup>
+</td></tr>
+<tr>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=XFER_Utility&amp;action=edit&amp;redlink=1" class="new" title="XFER Utility (page does not exist)">XFER Utility</a>
+</td></tr>
+<tr>
+<td>83</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td>MIT ML Device, networking file system<sup id="cite_ref-51" class="reference"><a href="#cite_note-51">[51]</a></sup>
+</td></tr>
+<tr>
+<td>84</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Common_Trace_Facility&amp;action=edit&amp;redlink=1" class="new" title="Common Trace Facility (page does not exist)">Common Trace Facility</a>
+</td></tr>
+<tr>
+<td>85</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=MIT_ML_Device&amp;action=edit&amp;redlink=1" class="new" title="MIT ML Device (page does not exist)">MIT ML Device</a>
+</td></tr>
+<tr>
+<td>86</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Micro_Focus_Cobol&amp;action=edit&amp;redlink=1" class="new" title="Micro Focus Cobol (page does not exist)">Micro Focus Cobol</a>
+</td></tr>
+<tr>
+<td>88</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Kerberos_(protocol)" title="Kerberos (protocol)">Kerberos</a><sup id="cite_ref-apple-kb-HT202944_11-11" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup><sup id="cite_ref-rfc1510_52-0" class="reference"><a href="#cite_note-rfc1510-52">[52]</a></sup><sup id="cite_ref-rfc4120_53-0" class="reference"><a href="#cite_note-rfc4120-53">[53]</a></sup> authentication system
+</td></tr>
+<tr>
+<td>89</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=SU/MIT_Telnet_Gateway&amp;action=edit&amp;redlink=1" class="new" title="SU/MIT Telnet Gateway (page does not exist)">SU/MIT Telnet Gateway</a>
+</td></tr>
+<tr>
+<td rowspan="2">90
+</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/PointCast_(dotcom)" class="mw-redirect" title="PointCast (dotcom)">PointCast (dotcom)</a><sup id="cite_ref-IANA_2-5" class="reference"><a href="#cite_note-IANA-2">[2]</a></sup>
+</td></tr>
+<tr>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=DNSIX_Securit_Attribute_Token_Map&amp;action=edit&amp;redlink=1" class="new" title="DNSIX Securit Attribute Token Map (page does not exist)">DNSIX Securit Attribute Token Map</a>
+</td></tr>
+<tr>
+<td>91</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=MIT_Dover_Spooler&amp;action=edit&amp;redlink=1" class="new" title="MIT Dover Spooler (page does not exist)">MIT Dover Spooler</a>
+</td></tr>
+<tr>
+<td>92</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Network_Printing_Protocol&amp;action=edit&amp;redlink=1" class="new" title="Network Printing Protocol (page does not exist)">Network Printing Protocol</a>
+</td></tr>
+<tr>
+<td>93</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Device_Control_Protocol&amp;action=edit&amp;redlink=1" class="new" title="Device Control Protocol (page does not exist)">Device Control Protocol</a>
+</td></tr>
+<tr>
+<td>94</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Tivoli_Object_Dispatcher&amp;action=edit&amp;redlink=1" class="new" title="Tivoli Object Dispatcher (page does not exist)">Tivoli Object Dispatcher</a>
+</td></tr>
+<tr>
+<td>95</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td>SUPDUP, terminal-independent remote login<sup id="cite_ref-54" class="reference"><a href="#cite_note-54">[54]</a></sup>
+</td></tr>
+<tr>
+<td>96</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=DIXIE_Protocol&amp;action=edit&amp;redlink=1" class="new" title="DIXIE Protocol (page does not exist)">DIXIE Protocol</a>
+</td></tr>
+<tr>
+<td>97</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Swift_Remote_Virtual_File_Protocol&amp;action=edit&amp;redlink=1" class="new" title="Swift Remote Virtual File Protocol (page does not exist)">Swift Remote Virtual File Protocol</a>
+</td></tr>
+<tr>
+<td>98</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=TAC_News&amp;action=edit&amp;redlink=1" class="new" title="TAC News (page does not exist)">TAC News</a>
+</td></tr>
+<tr>
+<td>99</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Metagram_Relay&amp;action=edit&amp;redlink=1" class="new" title="Metagram Relay (page does not exist)">Metagram Relay</a>
+</td></tr>
+<tr>
+<td>101</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/History_of_the_Internet#NIC,_InterNIC,_IANA,_and_ICANN" title="History of the Internet">NIC</a> <a href="/wiki/Hostname" title="Hostname">host name</a><sup id="cite_ref-rfc953_55-0" class="reference"><a href="#cite_note-rfc953-55">[55]</a></sup>
+</td></tr>
+<tr>
+<td>102</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/International_Organization_for_Standardization" title="International Organization for Standardization">ISO</a> Transport Service Access Point (<a href="/wiki/TSAP" class="mw-redirect" title="TSAP">TSAP</a>) Class 0 protocol;<sup id="cite_ref-rfc983_56-0" class="reference"><a href="#cite_note-rfc983-56">[56]</a></sup><sup id="cite_ref-rfc1006_57-0" class="reference"><a href="#cite_note-rfc1006-57">[57]</a></sup>
+</td></tr>
+<tr>
+<td>103</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Genesis_Point-to-Point_Trans_Net&amp;action=edit&amp;redlink=1" class="new" title="Genesis Point-to-Point Trans Net (page does not exist)">Genesis Point-to-Point Trans Net</a>
+</td></tr>
+<tr>
+<td>104</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Digital_Imaging_and_Communications_in_Medicine" class="mw-redirect" title="Digital Imaging and Communications in Medicine">Digital Imaging and Communications in Medicine</a> (DICOM; also port 11112)
+</td></tr>
+<tr>
+<td>105</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/CCSO_Nameserver" title="CCSO Nameserver">CCSO Nameserver</a><sup id="cite_ref-rfc2378_58-0" class="reference"><a href="#cite_note-rfc2378-58">[58]</a></sup>
+</td></tr>
+<tr>
+<td>106</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td style="background:#FFC7C7;vertical-align:middle;text-align:center;" class="table-no">No</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/MacOS_Server" title="MacOS Server">macOS Server</a>, (macOS) password server<sup id="cite_ref-apple-kb-HT202944_11-12" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup>
+</td></tr>
+<tr>
+<td>107</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Rtelnet" title="Rtelnet">Remote User Telnet Service</a> (RTelnet)<sup id="cite_ref-rfc818_59-0" class="reference"><a href="#cite_note-rfc818-59">[59]</a></sup>
+</td></tr>
+<tr>
+<td>108</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>IBM <a href="/wiki/Systems_Network_Architecture" title="Systems Network Architecture">Systems Network Architecture</a> (SNA) gateway access server
+</td></tr>
+<tr>
+<td>109</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Post_Office_Protocol" title="Post Office Protocol">Post Office Protocol</a>, version 2 (POP2)<sup id="cite_ref-rfc937_60-0" class="reference"><a href="#cite_note-rfc937-60">[60]</a></sup>
+</td></tr>
+<tr>
+<td>110</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td>Post Office Protocol, version 3 (POP3)<sup id="cite_ref-apple-kb-HT202944_11-13" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup><sup id="cite_ref-rfc1081_61-0" class="reference"><a href="#cite_note-rfc1081-61">[61]</a></sup><sup id="cite_ref-rfc1939_62-0" class="reference"><a href="#cite_note-rfc1939-62">[62]</a></sup>
+</td></tr>
+<tr>
+<td>111</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Open_Network_Computing_Remote_Procedure_Call" class="mw-redirect" title="Open Network Computing Remote Procedure Call">Open Network Computing Remote Procedure Call</a> (ONC RPC, sometimes referred to as Sun RPC)
+</td></tr>
+<tr>
+<td>112</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=McIDAS_Data_Transmission_Protocol&amp;action=edit&amp;redlink=1" class="new" title="McIDAS Data Transmission Protocol (page does not exist)">McIDAS Data Transmission Protocol</a>
+</td></tr>
+<tr>
+<td rowspan="2">113
+</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#FFC7C7;vertical-align:middle;text-align:center;" class="table-no">No</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Ident_protocol" title="Ident protocol">Ident</a>, authentication service/identification protocol,<sup id="cite_ref-apple-kb-HT202944_11-14" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup><sup id="cite_ref-rfc1413_63-0" class="reference"><a href="#cite_note-rfc1413-63">[63]</a></sup> used by <a href="/wiki/Internet_Relay_Chat" title="Internet Relay Chat">IRC</a> servers to identify users
+</td></tr>
+<tr>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td>Authentication Service (auth), the predecessor to <i>identification protocol</i>. Used to determine a user's identity of a particular TCP connection.<sup id="cite_ref-rfc931_64-0" class="reference"><a href="#cite_note-rfc931-64">[64]</a></sup>
+</td></tr>
+<tr>
+<td>115</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Simple_File_Transfer_Protocol" class="mw-redirect" title="Simple File Transfer Protocol">Simple File Transfer Protocol</a><sup id="cite_ref-rfc913_65-0" class="reference"><a href="#cite_note-rfc913-65">[65]</a></sup>
+</td></tr>
+<tr>
+<td>116</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=ANSA_REX_Notify&amp;action=edit&amp;redlink=1" class="new" title="ANSA REX Notify (page does not exist)">ANSA REX Notify</a>
+</td></tr>
+<tr>
+<td>117</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/UUCP_Mapping_Project" class="mw-redirect" title="UUCP Mapping Project">UUCP Mapping Project</a> (path service)<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (October 2016)">citation needed</span></a></i>]</sup>
+</td></tr>
+<tr>
+<td>118</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>Structured Query Language (<a href="/wiki/SQL" title="SQL">SQL</a>) Services<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Manual_of_Style#Technical_language" title="Wikipedia:Manual of Style"><span title="The material near this tag may be using jargon that limits the article's accessibility. (October 2016)">jargon</span></a></i>]</sup>
+</td></tr>
+<tr>
+<td>119</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Network_News_Transfer_Protocol" title="Network News Transfer Protocol">Network News Transfer Protocol</a> (NNTP),<sup id="cite_ref-apple-kb-HT202944_11-15" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup> retrieval of newsgroup messages<sup id="cite_ref-rfc977_66-0" class="reference"><a href="#cite_note-rfc977-66">[66]</a></sup><sup id="cite_ref-rfc3977_67-0" class="reference"><a href="#cite_note-rfc3977-67">[67]</a></sup>
+</td></tr>
+<tr>
+<td>120</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=CFDPTKT&amp;action=edit&amp;redlink=1" class="new" title="CFDPTKT (page does not exist)">CFDPTKT</a>
+</td></tr>
+<tr>
+<td>121</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Encore_Expedited_Remote_Pro.Call&amp;action=edit&amp;redlink=1" class="new" title="Encore Expedited Remote Pro.Call (page does not exist)">Encore Expedited Remote Pro.Call</a>
+</td></tr>
+<tr>
+<td>122</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=SMAKYNET&amp;action=edit&amp;redlink=1" class="new" title="SMAKYNET (page does not exist)">SMAKYNET</a>
+</td></tr>
+<tr>
+<td>123</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Network_Time_Protocol" title="Network Time Protocol">Network Time Protocol</a> (NTP), used for time synchronization<sup id="cite_ref-apple-kb-HT202944_11-16" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup>
+</td></tr>
+<tr>
+<td>124</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=ANSA_REX_Trader&amp;action=edit&amp;redlink=1" class="new" title="ANSA REX Trader (page does not exist)">ANSA REX Trader</a>
+</td></tr>
+<tr>
+<td>125</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Locus_PC-Interface_Net_Map_Ser&amp;action=edit&amp;redlink=1" class="new" title="Locus PC-Interface Net Map Ser (page does not exist)">Locus PC-Interface Net Map Ser</a>
+</td></tr>
+<tr>
+<td>126</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>Formerly <a href="/wiki/Unisys" title="Unisys">Unisys</a> Unitary Login, renamed by Unisys to NXEdit. Used by Unisys Programmer's Workbench for Clearpath MCP, an IDE for <a href="/wiki/Unisys_MCP_programming_languages" class="mw-redirect" title="Unisys MCP programming languages">Unisys MCP software development</a>
+</td></tr>
+<tr>
+<td>127</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Locus_PC-Interface_Conn_Server&amp;action=edit&amp;redlink=1" class="new" title="Locus PC-Interface Conn Server (page does not exist)">Locus PC-Interface Conn Server</a>
+</td></tr>
+<tr>
+<td>128</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=GSS_X_License_Verification&amp;action=edit&amp;redlink=1" class="new" title="GSS X License Verification (page does not exist)">GSS X License Verification</a>
+</td></tr>
+<tr>
+<td>129</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Password_Generator_Protocol&amp;action=edit&amp;redlink=1" class="new" title="Password Generator Protocol (page does not exist)">Password Generator Protocol</a>
+</td></tr>
+<tr>
+<td>130</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Cisco_FNATIVE&amp;action=edit&amp;redlink=1" class="new" title="Cisco FNATIVE (page does not exist)">Cisco FNATIVE</a>
+</td></tr>
+<tr>
+<td>131</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Cisco_TNATIVE&amp;action=edit&amp;redlink=1" class="new" title="Cisco TNATIVE (page does not exist)">Cisco TNATIVE</a>
+</td></tr>
+<tr>
+<td>132</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Cisco_SYSMAINT&amp;action=edit&amp;redlink=1" class="new" title="Cisco SYSMAINT (page does not exist)">Cisco SYSMAINT</a>
+</td></tr>
+<tr>
+<td>133</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Statistics_Service_(statsrv)&amp;action=edit&amp;redlink=1" class="new" title="Statistics Service (statsrv) (page does not exist)">Statistics Service (statsrv)</a>
+</td></tr>
+<tr>
+<td>134</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=INGRES-NET_Service&amp;action=edit&amp;redlink=1" class="new" title="INGRES-NET Service (page does not exist)">INGRES-NET Service</a>
+</td></tr>
+<tr>
+<td rowspan="2">135
+</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Distributed_Computing_Environment" title="Distributed Computing Environment">DCE</a> <a href="/wiki/Communication_endpoint" title="Communication endpoint">endpoint</a> resolution
+</td></tr>
+<tr>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Microsoft" title="Microsoft">Microsoft</a> EPMAP (End Point Mapper), also known as DCE/<a href="/wiki/Remote_procedure_call" title="Remote procedure call">RPC</a> Locator service,<sup id="cite_ref-68" class="reference"><a href="#cite_note-68">[68]</a></sup> used to remotely manage services including <a href="/wiki/DHCP_server" class="mw-redirect" title="DHCP server">DHCP server</a>, <a href="/wiki/Domain_Name_System" title="Domain Name System">DNS</a> server and <a href="/wiki/Windows_Internet_Name_Service" title="Windows Internet Name Service">WINS</a>. Also used by <a href="/wiki/Distributed_Component_Object_Model" title="Distributed Component Object Model">DCOM</a>
+</td></tr>
+<tr>
+<td>136</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=PROFILE_Naming_System&amp;action=edit&amp;redlink=1" class="new" title="PROFILE Naming System (page does not exist)">PROFILE Naming System</a>
+</td></tr>
+<tr>
+<td>137</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/NetBIOS" title="NetBIOS">NetBIOS</a> Name Service, used for name registration and <a href="/wiki/Name_resolution_(computer_systems)" title="Name resolution (computer systems)">resolution</a><sup id="cite_ref-rfc1001_69-0" class="reference"><a href="#cite_note-rfc1001-69">[69]</a></sup><sup id="cite_ref-rfc1002_70-0" class="reference"><a href="#cite_note-rfc1002-70">[70]</a></sup>
+</td></tr>
+<tr>
+<td>138</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>NetBIOS Datagram Service<sup id="cite_ref-apple-kb-HT202944_11-17" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup><sup id="cite_ref-rfc1001_69-1" class="reference"><a href="#cite_note-rfc1001-69">[69]</a></sup><sup id="cite_ref-rfc1002_70-1" class="reference"><a href="#cite_note-rfc1002-70">[70]</a></sup>
+</td></tr>
+<tr>
+<td>139</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td>NetBIOS Session Service<sup id="cite_ref-rfc1001_69-2" class="reference"><a href="#cite_note-rfc1001-69">[69]</a></sup><sup id="cite_ref-rfc1002_70-2" class="reference"><a href="#cite_note-rfc1002-70">[70]</a></sup>
+</td></tr>
+<tr>
+<td>140</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=EMFIS_Data_Service&amp;action=edit&amp;redlink=1" class="new" title="EMFIS Data Service (page does not exist)">EMFIS Data Service</a>
+</td></tr>
+<tr>
+<td>141</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=EMFIS_Control_Service&amp;action=edit&amp;redlink=1" class="new" title="EMFIS Control Service (page does not exist)">EMFIS Control Service</a>
+</td></tr>
+<tr>
+<td>142</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Britton-Lee_IDM&amp;action=edit&amp;redlink=1" class="new" title="Britton-Lee IDM (page does not exist)">Britton-Lee IDM</a>
+</td></tr>
+<tr>
+<td>143</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Internet_Message_Access_Protocol" title="Internet Message Access Protocol">Internet Message Access Protocol</a> (IMAP),<sup id="cite_ref-apple-kb-HT202944_11-18" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup> management of <a href="/wiki/Email" title="Email">electronic mail</a> messages on a server<sup id="cite_ref-rfc3501_71-0" class="reference"><a href="#cite_note-rfc3501-71">[71]</a></sup>
+</td></tr>
+<tr>
+<td>144</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Universal_Management_Architecture&amp;action=edit&amp;redlink=1" class="new" title="Universal Management Architecture (page does not exist)">Universal Management Architecture</a>
+</td></tr>
+<tr>
+<td>145</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=UAAC_Protocol&amp;action=edit&amp;redlink=1" class="new" title="UAAC Protocol (page does not exist)">UAAC Protocol</a>
+</td></tr>
+<tr>
+<td>146</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=ISO-IP0&amp;action=edit&amp;redlink=1" class="new" title="ISO-IP0 (page does not exist)">ISO-IP0</a>
+</td></tr>
+<tr>
+<td>147</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=ISO-IP&amp;action=edit&amp;redlink=1" class="new" title="ISO-IP (page does not exist)">ISO-IP</a>
+</td></tr>
+<tr>
+<td>148</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Jargon" title="Jargon">Jargon</a>
+</td></tr>
+<tr>
+<td>149</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=AED_512_Emulation_Service&amp;action=edit&amp;redlink=1" class="new" title="AED 512 Emulation Service (page does not exist)">AED 512 Emulation Service</a>
+</td></tr>
+<tr>
+<td>150</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=SQL-NET&amp;action=edit&amp;redlink=1" class="new" title="SQL-NET (page does not exist)">SQL-NET</a>
+</td></tr>
+<tr>
+<td>151</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Energy_management_system" title="Energy management system">HEMS</a>
+</td></tr>
+<tr>
+<td>152</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Background_File_Transfer_Program&amp;action=edit&amp;redlink=1" class="new" title="Background File Transfer Program (page does not exist)">Background File Transfer Program</a> (BFTP)<sup id="cite_ref-rfc1068_72-0" class="reference"><a href="#cite_note-rfc1068-72">[72]</a></sup><sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:What_Wikipedia_is_not#Encyclopedic_content" title="Wikipedia:What Wikipedia is not"><span title="The material preceding this tag may lack sufficient importance. (October 2016)">importance?</span></a></i>]</sup>
+</td></tr>
+<tr>
+<td>153</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Simple_Gateway_Monitoring_Protocol" title="Simple Gateway Monitoring Protocol">Simple Gateway Monitoring Protocol</a> (SGMP), a protocol for remote inspection and alteration of gateway management information<sup id="cite_ref-rfc1028_73-0" class="reference"><a href="#cite_note-rfc1028-73">[73]</a></sup>
+</td></tr>
+<tr>
+<td>154</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Netsc-prod&amp;action=edit&amp;redlink=1" class="new" title="Netsc-prod (page does not exist)">netsc-prod</a>
+</td></tr>
+<tr>
+<td>155</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Netsc-dev&amp;action=edit&amp;redlink=1" class="new" title="Netsc-dev (page does not exist)">netsc-dev</a>
+</td></tr>
+<tr>
+<td>156</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>Structured Query Language (<a href="/wiki/SQL" title="SQL">SQL</a>) Service<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Manual_of_Style#Technical_language" title="Wikipedia:Manual of Style"><span title="The material near this tag may be using jargon that limits the article's accessibility. (October 2016)">jargon</span></a></i>]</sup>
+</td></tr>
+<tr>
+<td>157</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=KNET/VM_Command/Message_Protocol&amp;action=edit&amp;redlink=1" class="new" title="KNET/VM Command/Message Protocol (page does not exist)">KNET/VM Command/Message Protocol</a>
+</td></tr>
+<tr>
+<td>158</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Distributed_Mail_System_Protocol&amp;action=edit&amp;redlink=1" class="new" title="Distributed Mail System Protocol (page does not exist)">Distributed Mail System Protocol</a> (DMSP, sometimes referred to as Pcmail)<sup id="cite_ref-rfc1056_74-0" class="reference"><a href="#cite_note-rfc1056-74">[74]</a></sup><sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:What_Wikipedia_is_not#Encyclopedic_content" title="Wikipedia:What Wikipedia is not"><span title="The material preceding this tag may lack sufficient importance. (October 2016)">importance?</span></a></i>]</sup>
+</td></tr>
+<tr>
+<td>159</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=NSS-Routing&amp;action=edit&amp;redlink=1" class="new" title="NSS-Routing (page does not exist)">NSS-Routing</a>
+</td></tr>
+<tr>
+<td>160</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=SGMP-TRAPS&amp;action=edit&amp;redlink=1" class="new" title="SGMP-TRAPS (page does not exist)">SGMP-TRAPS</a>
+</td></tr>
+<tr>
+<td>161</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Simple_Network_Management_Protocol" title="Simple Network Management Protocol">Simple Network Management Protocol</a> (SNMP)<sup id="cite_ref-rfc1157_75-0" class="reference"><a href="#cite_note-rfc1157-75">[75]</a></sup><sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="Please add citations for SNMPv2 and SNMPv3 protocols. (October 2016)">citation needed</span></a></i>]</sup><sup id="cite_ref-apple-kb-HT202944_11-19" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup>
+</td></tr>
+<tr>
+<td>162</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Simple_Network_Management_Protocol" title="Simple Network Management Protocol">Simple Network Management Protocol</a> Trap (SNMPTRAP)<sup id="cite_ref-rfc1157_75-1" class="reference"><a href="#cite_note-rfc1157-75">[75]</a></sup><sup id="cite_ref-cisco-support-7244_76-0" class="reference"><a href="#cite_note-cisco-support-7244-76">[76]</a></sup><sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="Please add citations for SNMPv2 and SNMPv3 protocols. (October 2016)">citation needed</span></a></i>]</sup>
+</td></tr>
+<tr>
+<td>163</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=CMIP/TCP_Manager&amp;action=edit&amp;redlink=1" class="new" title="CMIP/TCP Manager (page does not exist)">CMIP/TCP Manager</a>
+</td></tr>
+<tr>
+<td>164</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=CMIP/TCP_Agent&amp;action=edit&amp;redlink=1" class="new" title="CMIP/TCP Agent (page does not exist)">CMIP/TCP Agent</a>
+</td></tr>
+<tr>
+<td>165</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Xerox" title="Xerox">Xerox</a>
+</td></tr>
+<tr>
+<td>166</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Sirius_Systems&amp;action=edit&amp;redlink=1" class="new" title="Sirius Systems (page does not exist)">Sirius Systems</a>
+</td></tr>
+<tr>
+<td>167</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/NAMP" class="mw-disambig" title="NAMP">NAMP</a><sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:WikiProject_Disambiguation/Fixing_links" title="Wikipedia:WikiProject Disambiguation/Fixing links"><span title="Link needs disambiguation (May 2022)">disambiguation needed</span></a></i>]</sup>
+</td></tr>
+<tr>
+<td>168</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=RSVD&amp;action=edit&amp;redlink=1" class="new" title="RSVD (page does not exist)">RSVD</a>
+</td></tr>
+<tr>
+<td>169</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Secure_Neighbor_Discovery" title="Secure Neighbor Discovery">SEND</a>
+</td></tr>
+<tr>
+<td>170</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>Network <a href="/wiki/PostScript" title="PostScript">PostScript</a> <a href="/wiki/Print_server" title="Print server">print server</a>
+</td></tr>
+<tr>
+<td>171</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Network_Innovations_Multiplex&amp;action=edit&amp;redlink=1" class="new" title="Network Innovations Multiplex (page does not exist)">Network Innovations Multiplex</a>
+</td></tr>
+<tr>
+<td>172</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Network_Innovations_CL/1&amp;action=edit&amp;redlink=1" class="new" title="Network Innovations CL/1 (page does not exist)">Network Innovations CL/1</a>
+</td></tr>
+<tr>
+<td>173</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Xyplex&amp;action=edit&amp;redlink=1" class="new" title="Xyplex (page does not exist)">Xyplex</a>
+</td></tr>
+<tr>
+<td>174</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=MAILQ&amp;action=edit&amp;redlink=1" class="new" title="MAILQ (page does not exist)">MAILQ</a>
+</td></tr>
+<tr>
+<td>175</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=VMNET&amp;action=edit&amp;redlink=1" class="new" title="VMNET (page does not exist)">VMNET</a>
+</td></tr>
+<tr>
+<td>176</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=GENRAD-MUX&amp;action=edit&amp;redlink=1" class="new" title="GENRAD-MUX (page does not exist)">GENRAD-MUX</a>
+</td></tr>
+<tr>
+<td>177</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/X_Display_Manager_Control_Protocol" class="mw-redirect" title="X Display Manager Control Protocol">X Display Manager Control Protocol</a> (XDMCP), used for remote logins to an <a href="/wiki/X_display_manager" title="X display manager">X Display Manager</a> server<sup id="cite_ref-X11R7.6-doc-xdmcp_77-0" class="reference"><a href="#cite_note-X11R7.6-doc-xdmcp-77">[77]</a></sup><sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Verifiability#Self-published_sources" title="Wikipedia:Verifiability"><span title="The material near this tag may rely on a self-published source. (October 2016)">self-published source</span></a></i>]</sup>
+</td></tr>
+<tr>
+<td>178</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=NextStep_Window_Server&amp;action=edit&amp;redlink=1" class="new" title="NextStep Window Server (page does not exist)">NextStep Window Server</a>
+</td></tr>
+<tr>
+<td>179</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes<sup id="cite_ref-rfc4960_12-6" class="reference"><a href="#cite_note-rfc4960-12">[12]</a></sup></td>
+<td>
+</td>
+<td><a href="/wiki/Border_Gateway_Protocol" title="Border Gateway Protocol">Border Gateway Protocol</a> (BGP),<sup id="cite_ref-rfc4271_78-0" class="reference"><a href="#cite_note-rfc4271-78">[78]</a></sup> used to exchange routing and reachability information among <a href="/wiki/Autonomous_system_(Internet)" title="Autonomous system (Internet)">autonomous systems</a> (AS) on the <a href="/wiki/Internet" title="Internet">Internet</a>
+</td></tr>
+<tr>
+<td>180</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Remote_Installation_Services" title="Remote Installation Services">ris</a>
+</td></tr>
+<tr>
+<td>181</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Unify" class="mw-redirect mw-disambig" title="Unify">Unify</a><sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:WikiProject_Disambiguation/Fixing_links" title="Wikipedia:WikiProject Disambiguation/Fixing links"><span title="Link needs disambiguation (May 2022)">disambiguation needed</span></a></i>]</sup>
+</td></tr>
+<tr>
+<td>182</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Unisys_Audit_SITP&amp;action=edit&amp;redlink=1" class="new" title="Unisys Audit SITP (page does not exist)">Unisys Audit SITP</a>
+</td></tr>
+<tr>
+<td>183</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=OCBinder&amp;action=edit&amp;redlink=1" class="new" title="OCBinder (page does not exist)">OCBinder</a>
+</td></tr>
+<tr>
+<td>184</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=OCServer&amp;action=edit&amp;redlink=1" class="new" title="OCServer (page does not exist)">OCServer</a>
+</td></tr>
+<tr>
+<td>185</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Remote-KIS&amp;action=edit&amp;redlink=1" class="new" title="Remote-KIS (page does not exist)">Remote-KIS</a>
+</td></tr>
+<tr>
+<td>186</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=KIS_Protocol&amp;action=edit&amp;redlink=1" class="new" title="KIS Protocol (page does not exist)">KIS Protocol</a>
+</td></tr>
+<tr>
+<td>187</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Application_Communication_Interface&amp;action=edit&amp;redlink=1" class="new" title="Application Communication Interface (page does not exist)">Application Communication Interface</a>
+</td></tr>
+<tr>
+<td>188</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Plus_Five%27s_MUMPS&amp;action=edit&amp;redlink=1" class="new" title="Plus Five's MUMPS (page does not exist)">Plus Five's MUMPS</a>
+</td></tr>
+<tr>
+<td>189</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Queued_File_Transport&amp;action=edit&amp;redlink=1" class="new" title="Queued File Transport (page does not exist)">Queued File Transport</a>
+</td></tr>
+<tr>
+<td>190</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Gateway_Access_Control_Protocol&amp;action=edit&amp;redlink=1" class="new" title="Gateway Access Control Protocol (page does not exist)">Gateway Access Control Protocol</a>
+</td></tr>
+<tr>
+<td>191</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Prospero_Directory_Service&amp;action=edit&amp;redlink=1" class="new" title="Prospero Directory Service (page does not exist)">Prospero Directory Service</a>
+</td></tr>
+<tr>
+<td>192</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=OSU_Network_Monitoring_System&amp;action=edit&amp;redlink=1" class="new" title="OSU Network Monitoring System (page does not exist)">OSU Network Monitoring System</a>
+</td></tr>
+<tr>
+<td>193</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Spider_Remote_Monitoring_Protocol&amp;action=edit&amp;redlink=1" class="new" title="Spider Remote Monitoring Protocol (page does not exist)">Spider Remote Monitoring Protocol</a>
+</td></tr>
+<tr>
+<td>194</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Internet_Relay_Chat" title="Internet Relay Chat">Internet Relay Chat</a> (IRC)<sup id="cite_ref-rfc7194_79-0" class="reference"><a href="#cite_note-rfc7194-79">[79]</a></sup>
+</td></tr>
+<tr>
+<td>195</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=DNSIX_Network_Layer_Module_Audit&amp;action=edit&amp;redlink=1" class="new" title="DNSIX Network Layer Module Audit (page does not exist)">DNSIX Network Layer Module Audit</a>
+</td></tr>
+<tr>
+<td>196</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=DNSIX_Session_Mgt_Module_Audit_Redir&amp;action=edit&amp;redlink=1" class="new" title="DNSIX Session Mgt Module Audit Redir (page does not exist)">DNSIX Session Mgt Module Audit Redir</a>
+</td></tr>
+<tr>
+<td>197</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Directory_Location_Service&amp;action=edit&amp;redlink=1" class="new" title="Directory Location Service (page does not exist)">Directory Location Service</a>
+</td></tr>
+<tr>
+<td>198</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=Directory_Location_Service_Monitor&amp;action=edit&amp;redlink=1" class="new" title="Directory Location Service Monitor (page does not exist)">Directory Location Service Monitor</a>
+</td></tr>
+<tr>
+<td>199</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/SNMP" class="mw-redirect" title="SNMP">SNMP</a> Unix Multiplexer (SMUX)<sup id="cite_ref-rfc1227_80-0" class="reference"><a href="#cite_note-rfc1227-80">[80]</a></sup>
+</td></tr>
+<tr>
+<td>200</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/w/index.php?title=IBM_System_Resource_Controller&amp;action=edit&amp;redlink=1" class="new" title="IBM System Resource Controller (page does not exist)">IBM System Resource Controller</a>
+</td></tr>
+<tr>
+<td>201</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/AppleTalk" title="AppleTalk">AppleTalk</a> Routing Maintenance
+</td></tr>
+<tr>
+<td>209</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Quick_Mail_Transfer_Protocol" title="Quick Mail Transfer Protocol">Quick Mail Transfer Protocol</a><sup id="cite_ref-qmtp.txt_81-0" class="reference"><a href="#cite_note-qmtp.txt-81">[81]</a></sup><sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Verifiability#Self-published_sources" title="Wikipedia:Verifiability"><span title="The material near this tag may rely on a self-published source. (April 2018)">self-published source</span></a></i>]</sup>
+</td></tr>
+<tr>
+<td>210</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/ANSI" class="mw-redirect" title="ANSI">ANSI</a> <a href="/wiki/Z39.50" title="Z39.50">Z39.50</a>
+</td></tr>
+<tr>
+<td>213</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Internetwork_Packet_Exchange" title="Internetwork Packet Exchange">Internetwork Packet Exchange</a> (IPX)
+</td></tr>
+<tr>
+<td>218</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>Message posting protocol (MPP)
+</td></tr>
+<tr>
+<td>220</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Internet_Message_Access_Protocol" title="Internet Message Access Protocol">Internet Message Access Protocol</a> (IMAP), version 3
+</td></tr>
+<tr>
+<td>225–241</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">Reserved</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">Reserved</td>
+<td></td>
+<td>
+</td>
+<td>
+</td></tr>
+<tr>
+<td>249–255</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">Reserved</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">Reserved</td>
+<td></td>
+<td>
+</td>
+<td>
+</td></tr>
+<tr>
+<td>259</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>Efficient Short Remote Operations (ESRO)
+</td></tr>
+<tr>
+<td>262</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>Arcisdms
+</td></tr>
+<tr>
+<td>264</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Border_Gateway_Multicast_Protocol" title="Border Gateway Multicast Protocol">Border Gateway Multicast Protocol</a> (BGMP)
+</td></tr>
+<tr>
+<td>280</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>http-mgmt
+</td></tr>
+<tr>
+<td>300</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/ThinLinc" title="ThinLinc">ThinLinc</a> Web Access
+</td></tr>
+<tr>
+<td>308</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td>Novastor Online Backup
+</td></tr>
+<tr>
+<td>311</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/MacOS_Server" title="MacOS Server">macOS Server</a> Admin<sup id="cite_ref-apple-kb-HT202944_11-20" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup> (officially <a href="/wiki/AppleShare" title="AppleShare">AppleShare</a> IP Web administration<sup id="cite_ref-IANA_2-6" class="reference"><a href="#cite_note-IANA-2">[2]</a></sup>)
+</td></tr>
+<tr>
+<td>312</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td style="background:#FFC7C7;vertical-align:middle;text-align:center;" class="table-no">No</td>
+<td></td>
+<td>
+</td>
+<td>macOS <a href="/wiki/Xsan" title="Xsan">Xsan</a> administration<sup id="cite_ref-apple-kb-HT202944_11-21" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup>
+</td></tr>
+<tr>
+<td>318</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>PKIX <a href="/wiki/Time_Stamp_Protocol" class="mw-redirect" title="Time Stamp Protocol">Time Stamp Protocol</a> (TSP)
+</td></tr>
+<tr>
+<td>319</td>
+<td></td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Precision_Time_Protocol" title="Precision Time Protocol">Precision Time Protocol</a> (PTP) event messages
+</td></tr>
+<tr>
+<td>320</td>
+<td></td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Precision_Time_Protocol" title="Precision Time Protocol">Precision Time Protocol</a> (PTP) general messages
+</td></tr>
+<tr>
+<td>350</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Mapping_of_Airline_Traffic_over_Internet_Protocol" title="Mapping of Airline Traffic over Internet Protocol">Mapping of Airline Traffic over Internet Protocol</a> (MATIP) type A
+</td></tr>
+<tr>
+<td>351</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>MATIP type B
+</td></tr>
+<tr>
+<td>356</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>cloanto-net-1 (used by Cloanto Amiga Explorer and VMs)
+</td></tr>
+<tr>
+<td>366</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>On-Demand Mail Relay (ODMR)
+</td></tr>
+<tr>
+<td>369</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>Rpc2portmap
+</td></tr>
+<tr>
+<td rowspan="2">370
+</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>codaauth2, Coda authentication server
+</td></tr>
+<tr>
+<td></td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>securecast1, outgoing packets to <a href="/wiki/McAfee" title="McAfee">NAI</a>'s SecureCast servers<sup id="cite_ref-SecureCast_82-0" class="reference"><a href="#cite_note-SecureCast-82">[82]</a></sup>As of 2000<sup class="plainlinks noexcerpt noprint asof-tag update" style="display:none;"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=List_of_TCP_and_UDP_port_numbers&amp;action=edit">[update]</a></sup>
+</td></tr>
+<tr>
+<td>371</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>ClearCase albd
+</td></tr>
+<tr>
+<td>376</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Amiga" title="Amiga">Amiga</a> Envoy Network Inquiry Protocol
+</td></tr>
+<tr>
+<td>383</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>HP data alarm manager
+</td></tr>
+<tr>
+<td>384</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>A Remote Network Server System
+</td></tr>
+<tr>
+<td>387</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>AURP (<a href="/wiki/AppleTalk" title="AppleTalk">AppleTalk</a> Update-based Routing Protocol)<sup id="cite_ref-83" class="reference"><a href="#cite_note-83">[83]</a></sup>
+</td></tr>
+<tr>
+<td>388</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Local_Data_Manager" title="Local Data Manager">Unidata LDM</a> near real-time data distribution protocol<sup id="cite_ref-84" class="reference"><a href="#cite_note-84">[84]</a></sup><sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Verifiability#Self-published_sources" title="Wikipedia:Verifiability"><span title="This reference citation appears to be to a self-published source. (November 2018)">self-published source</span></a></i>]</sup><sup id="cite_ref-85" class="reference"><a href="#cite_note-85">[85]</a></sup><sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Verifiability#Self-published_sources" title="Wikipedia:Verifiability"><span title="This reference citation appears to be to a self-published source. (November 2018)">self-published source</span></a></i>]</sup>
+</td></tr>
+<tr>
+<td>389</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Lightweight_Directory_Access_Protocol" title="Lightweight Directory Access Protocol">Lightweight Directory Access Protocol</a> (LDAP)<sup id="cite_ref-apple-kb-HT202944_11-22" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup>
+</td></tr>
+<tr>
+<td>399</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Digital_Equipment_Corporation" title="Digital Equipment Corporation">Digital Equipment Corporation</a> <a href="/w/index.php?title=DECnet%2B&amp;action=edit&amp;redlink=1" class="new" title="DECnet+ (page does not exist)">DECnet+</a> (Phase V) over TCP/IP (RFC1859)
+</td></tr>
+<tr>
+<td>401</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Uninterruptible_power_supply" title="Uninterruptible power supply">Uninterruptible power supply</a> (UPS)
+</td></tr>
+<tr>
+<td>427</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Service_Location_Protocol" title="Service Location Protocol">Service Location Protocol</a> (SLP)<sup id="cite_ref-apple-kb-HT202944_11-23" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup>
+</td></tr>
+<tr>
+<td>433</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>NNTP, part of <a href="/wiki/Network_News_Transfer_Protocol" title="Network News Transfer Protocol">Network News Transfer Protocol</a>
+</td></tr>
+<tr>
+<td>434</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Mobile_IP" title="Mobile IP">Mobile IP</a> Agent (RFC 5944)
+</td></tr>
+<tr>
+<td>443</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes<sup id="cite_ref-rfc4960_12-7" class="reference"><a href="#cite_note-rfc4960-12">[12]</a></sup></td>
+<td>
+</td>
+<td><a href="/wiki/HTTPS" title="HTTPS">Hypertext Transfer Protocol Secure</a> (HTTPS)<sup id="cite_ref-rfc7230_48-1" class="reference"><a href="#cite_note-rfc7230-48">[48]</a></sup><sup id="cite_ref-rfc7540_49-1" class="reference"><a href="#cite_note-rfc7540-49">[49]</a></sup> uses TCP in versions 1.x and 2. <a href="/wiki/HTTP/3" title="HTTP/3">HTTP/3</a> uses QUIC,<sup id="cite_ref-quic_50-1" class="reference"><a href="#cite_note-quic-50">[50]</a></sup> a transport protocol on top of UDP.
+</td></tr>
+<tr>
+<td>444</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Simple_Network_Paging_Protocol" title="Simple Network Paging Protocol">Simple Network Paging Protocol</a> (SNPP), RFC 1568
+</td></tr>
+<tr>
+<td rowspan="2">445
+</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>Microsoft-DS (Directory Services) <a href="/wiki/Active_Directory" title="Active Directory">Active Directory</a>,<sup id="cite_ref-msft-tn-dd772723_86-0" class="reference"><a href="#cite_note-msft-tn-dd772723-86">[86]</a></sup> Windows shares
+</td></tr>
+<tr>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td>Microsoft-DS (Directory Services) <a href="/wiki/Server_Message_Block" title="Server Message Block">SMB</a><sup id="cite_ref-apple-kb-HT202944_11-24" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup> file sharing
+</td></tr>
+<tr>
+<td>464</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Kerberos_(protocol)" title="Kerberos (protocol)">Kerberos</a> Change/Set password
+</td></tr>
+<tr>
+<td rowspan="3">465<sup id="cite_ref-tcp465_87-0" class="reference"><a href="#cite_note-tcp465-87">[note 1]</a></sup>
+</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#FFC7C7;vertical-align:middle;text-align:center;" class="table-no">No</td>
+<td></td>
+<td>
+</td>
+<td>SMTP over implicit SSL <i>(obsolete)</i><sup id="cite_ref-88" class="reference"><a href="#cite_note-88">[87]</a></sup>
+</td></tr>
+<tr>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#FFC7C7;vertical-align:middle;text-align:center;" class="table-no">No</td>
+<td></td>
+<td>
+</td>
+<td>URL Rendezvous Directory for Cisco SSM <i>(primary usage assignment)</i><sup id="cite_ref-89" class="reference"><a href="#cite_note-89">[88]</a></sup>
+</td></tr>
+<tr>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#FFC7C7;vertical-align:middle;text-align:center;" class="table-no">No</td>
+<td></td>
+<td>
+</td>
+<td>Authenticated <a href="/wiki/Simple_Mail_Transfer_Protocol" title="Simple Mail Transfer Protocol">SMTP</a><sup id="cite_ref-apple-kb-HT202944_11-25" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup> over <a href="/wiki/Transport_Layer_Security" title="Transport Layer Security">TLS/SSL</a> (<a href="/wiki/SMTPS" title="SMTPS">SMTPS</a>) <i>(alternative usage assignment)</i><sup id="cite_ref-theregister-2018-02-01-rfc8314_90-0" class="reference"><a href="#cite_note-theregister-2018-02-01-rfc8314-90">[89]</a></sup>
+</td></tr>
+<tr>
+<td>475</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>tcpnethaspsrv, <a href="/wiki/Aladdin_Knowledge_Systems" title="Aladdin Knowledge Systems">Aladdin Knowledge Systems</a> Hasp services
+</td></tr>
+<tr>
+<td>476–490</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td>
+</td>
+<td><a rel="nofollow" class="external text" href="https://www.centrosoftware.com/">Centro Software ERP</a> ports
+</td></tr>
+<tr>
+<td>491</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/GO-Global" title="GO-Global">GO-Global remote access and application publishing software</a>
+</td></tr>
+<tr>
+<td>497</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Retrospect_(software)" title="Retrospect (software)">Retrospect</a>
+</td></tr>
+<tr>
+<td>500</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Internet_Security_Association_and_Key_Management_Protocol" title="Internet Security Association and Key Management Protocol">Internet Security Association and Key Management Protocol</a> (ISAKMP) / <a href="/wiki/Internet_Key_Exchange" title="Internet Key Exchange">Internet Key Exchange</a> (IKE)<sup id="cite_ref-apple-kb-HT202944_11-26" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup>
+</td></tr>
+<tr>
+<td>502</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Modbus" title="Modbus">Modbus</a> Protocol
+</td></tr>
+<tr>
+<td>504</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Citadel/UX" title="Citadel/UX">Citadel</a>, multiservice protocol for dedicated clients for the Citadel groupware system
+</td></tr>
+<tr>
+<td>510</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>FirstClass Protocol (FCP), used by <a href="/wiki/FirstClass" title="FirstClass">FirstClass</a> client/server groupware system
+</td></tr>
+<tr>
+<td rowspan="2">512
+</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Remote_Process_Execution" class="mw-redirect" title="Remote Process Execution">Rexec</a>, Remote Process Execution
+</td></tr>
+<tr>
+<td></td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>comsat, together with <a href="/wiki/Biff_(Unix)" title="Biff (Unix)">biff</a>
+</td></tr>
+<tr>
+<td rowspan="2">513
+</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Rlogin" class="mw-redirect" title="Rlogin">rlogin</a>
+</td></tr>
+<tr>
+<td></td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>Who<sup id="cite_ref-rfc1340_91-0" class="reference"><a href="#cite_note-rfc1340-91">[90]</a></sup>
+</td></tr>
+<tr>
+<td rowspan="2">514
+</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Remote_Shell" title="Remote Shell">Remote Shell</a>, used to execute non-interactive commands on a remote system (Remote Shell, rsh, remsh)
+</td></tr>
+<tr>
+<td style="background:#FFC7C7;vertical-align:middle;text-align:center;" class="table-no">No</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Syslog" title="Syslog">Syslog</a>,<sup id="cite_ref-apple-kb-HT202944_11-27" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup> used for system logging
+</td></tr>
+<tr>
+<td>515</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Line_Printer_Daemon_protocol" title="Line Printer Daemon protocol">Line Printer Daemon</a> (LPD),<sup id="cite_ref-apple-kb-HT202944_11-28" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup> print service
+</td></tr>
+<tr>
+<td>517</td>
+<td></td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Talk_(software)" title="Talk (software)">Talk</a>
+</td></tr>
+<tr>
+<td>518</td>
+<td></td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>NTalk
+</td></tr>
+<tr>
+<td rowspan="2">520
+</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td>efs, extended file name server
+</td></tr>
+<tr>
+<td></td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Routing_Information_Protocol" title="Routing Information Protocol">Routing Information Protocol</a> (RIP)
+</td></tr>
+<tr>
+<td>521</td>
+<td></td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/RIPng" class="mw-redirect" title="RIPng">Routing Information Protocol Next Generation</a> (RIPng)
+</td></tr>
+<tr>
+<td>524</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/NetWare_Core_Protocol" title="NetWare Core Protocol">NetWare Core Protocol</a> (NCP) is used for a variety things such as access to primary NetWare server resources, Time Synchronization, etc.
+</td></tr>
+<tr>
+<td>525</td>
+<td></td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>Timed, <a href="/wiki/Timeserver" class="mw-redirect" title="Timeserver">Timeserver</a>
+</td></tr>
+<tr>
+<td>530</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Remote_procedure_call" title="Remote procedure call">Remote procedure call</a> (RPC)
+</td></tr>
+<tr>
+<td>532</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td>netnews<sup id="cite_ref-apple-kb-HT202944_11-29" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup>
+</td></tr>
+<tr>
+<td>533</td>
+<td></td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>netwall, for emergency broadcasts
+</td></tr>
+<tr>
+<td>540</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td>Unix-to-Unix Copy Protocol (<a href="/wiki/UUCP" title="UUCP">UUCP</a>)
+</td></tr>
+<tr>
+<td>542</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Commerce" title="Commerce">commerce</a> (Commerce Applications)
+</td></tr>
+<tr>
+<td>543</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td>klogin, <a href="/wiki/Kerberos_(protocol)" title="Kerberos (protocol)">Kerberos</a> login
+</td></tr>
+<tr>
+<td>544</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td>kshell, Kerberos Remote shell
+</td></tr>
+<tr>
+<td>546</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/DHCPv6" title="DHCPv6">DHCPv6</a> client
+</td></tr>
+<tr>
+<td>547</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>DHCPv6 server
+</td></tr>
+<tr>
+<td>548</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Apple_Filing_Protocol" title="Apple Filing Protocol">Apple Filing Protocol</a> (AFP) over <a href="/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol">TCP</a><sup id="cite_ref-apple-kb-HT202944_11-30" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup>
+</td></tr>
+<tr>
+<td>550</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>new-rwho, new-who<sup id="cite_ref-rfc1340_91-1" class="reference"><a href="#cite_note-rfc1340-91">[90]</a></sup>
+</td></tr>
+<tr>
+<td>554</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Real_Time_Streaming_Protocol" title="Real Time Streaming Protocol">Real Time Streaming Protocol</a> (RTSP)<sup id="cite_ref-apple-kb-HT202944_11-31" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup>
+</td></tr>
+<tr>
+<td>556</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td>Remotefs, <a href="/wiki/Remote_File_System" class="mw-redirect" title="Remote File System">RFS</a>, rfs_server
+</td></tr>
+<tr>
+<td>560</td>
+<td></td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>rmonitor, Remote Monitor
+</td></tr>
+<tr>
+<td>561</td>
+<td></td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>monitor
+</td></tr>
+<tr>
+<td>563</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/NNTP" class="mw-redirect" title="NNTP">NNTP</a> over <a href="/wiki/Transport_Layer_Security" title="Transport Layer Security">TLS/SSL</a> (NNTPS)
+</td></tr>
+<tr>
+<td>564</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/9P_(protocol)" title="9P (protocol)">9P</a> (<a href="/wiki/Plan_9_from_Bell_Labs" title="Plan 9 from Bell Labs">Plan 9</a>)
+</td></tr>
+<tr>
+<td>585</td>
+<td style="background:#FFC7C7;vertical-align:middle;text-align:center;" class="table-no">No</td>
+<td style="background:#FFC7C7;vertical-align:middle;text-align:center;" class="table-no">No</td>
+<td></td>
+<td>
+</td>
+<td>Previously assigned for use of <a href="/wiki/Internet_Message_Access_Protocol" title="Internet Message Access Protocol">Internet Message Access Protocol</a> over <a href="/wiki/Transport_Layer_Security" title="Transport Layer Security">TLS/SSL</a> (IMAPS), now deregisterd in favour of port 993.<sup id="cite_ref-oreilly-fire-2ndEd_92-0" class="reference"><a href="#cite_note-oreilly-fire-2ndEd-92">[91]</a></sup>
+</td></tr>
+<tr>
+<td>587</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Mail_submission_agent" class="mw-redirect" title="Mail submission agent">email message submission</a><sup id="cite_ref-apple-kb-HT202944_11-32" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup><sup id="cite_ref-93" class="reference"><a href="#cite_note-93">[92]</a></sup> (<a href="/wiki/Simple_Mail_Transfer_Protocol" title="Simple Mail Transfer Protocol">SMTP</a>)
+</td></tr>
+<tr>
+<td>591</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/FileMaker" title="FileMaker">FileMaker</a> 6.0 (and later) Web Sharing (HTTP Alternate, also see port 80)
+</td></tr>
+<tr>
+<td>593</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>HTTP RPC Ep Map, <a href="/wiki/Remote_procedure_call" title="Remote procedure call">Remote procedure call</a> over <a href="/wiki/Hypertext_Transfer_Protocol" title="Hypertext Transfer Protocol">Hypertext Transfer Protocol</a>, often used by <a href="/wiki/Distributed_Component_Object_Model" title="Distributed Component Object Model">Distributed Component Object Model</a> services and <a href="/wiki/Microsoft_Exchange_Server" title="Microsoft Exchange Server">Microsoft Exchange Server</a>
+</td></tr>
+<tr>
+<td>601</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td>Reliable <a href="/wiki/Syslog" title="Syslog">Syslog</a> Service — used for system logging
+</td></tr>
+<tr>
+<td>604</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td>TUNNEL profile,<sup id="cite_ref-94" class="reference"><a href="#cite_note-94">[93]</a></sup> a protocol for <a href="/wiki/BEEP" title="BEEP">BEEP</a> <a href="/wiki/Peer-to-peer" title="Peer-to-peer">peers</a> to form an <a href="/wiki/Application_layer" title="Application layer">application layer</a> <a href="/wiki/Tunneling_protocol" title="Tunneling protocol">tunnel</a>
+</td></tr>
+<tr>
+<td>623</td>
+<td></td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>ASF Remote Management and Control Protocol (ASF-RMCP) &amp; IPMI Remote Management Protocol
+</td></tr>
+<tr>
+<td>625</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td style="background:#FFC7C7;vertical-align:middle;text-align:center;" class="table-no">No</td>
+<td></td>
+<td>
+</td>
+<td>Open Directory Proxy (ODProxy)<sup id="cite_ref-apple-kb-HT202944_11-33" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup>
+</td></tr>
+<tr>
+<td rowspan="2">631
+</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Internet_Printing_Protocol" title="Internet Printing Protocol">Internet Printing Protocol</a> (IPP)<sup id="cite_ref-apple-kb-HT202944_11-34" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup>
+</td></tr>
+<tr>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Common_Unix_Printing_System" class="mw-redirect" title="Common Unix Printing System">Common Unix Printing System</a> (CUPS) administration console (extension to IPP)
+</td></tr>
+<tr>
+<td>635</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>RLZ DBase
+</td></tr>
+<tr>
+<td>636</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Lightweight_Directory_Access_Protocol" title="Lightweight Directory Access Protocol">Lightweight Directory Access Protocol</a> over <a href="/wiki/Transport_Layer_Security" title="Transport Layer Security">TLS/SSL</a> (LDAPS)<sup id="cite_ref-apple-kb-HT202944_11-35" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup>
+</td></tr>
+<tr>
+<td>639</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Multicast_Source_Discovery_Protocol" title="Multicast Source Discovery Protocol">Multicast Source Discovery Protocol</a>, MSDP
+</td></tr>
+<tr>
+<td>641</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>SupportSoft Nexus Remote Command (control/listening), a proxy gateway connecting remote control traffic
+</td></tr>
+<tr>
+<td>643</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>SANity
+</td></tr>
+<tr>
+<td>646</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Label_Distribution_Protocol" title="Label Distribution Protocol">Label Distribution Protocol</a> (LDP), a routing protocol used in <a href="/wiki/Multiprotocol_Label_Switching" title="Multiprotocol Label Switching">MPLS</a> networks
+</td></tr>
+<tr>
+<td>647</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Dynamic_Host_Configuration_Protocol#Reliability" title="Dynamic Host Configuration Protocol">DHCP Failover</a> protocol<sup id="cite_ref-95" class="reference"><a href="#cite_note-95">[94]</a></sup>
+</td></tr>
+<tr>
+<td>648</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td>Registry Registrar Protocol (RRP)<sup id="cite_ref-96" class="reference"><a href="#cite_note-96">[95]</a></sup>
+</td></tr>
+<tr>
+<td>651</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>IEEE-MMS
+</td></tr>
+<tr>
+<td>653</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>SupportSoft Nexus Remote Command (data), a proxy gateway connecting remote control traffic
+</td></tr>
+<tr>
+<td>654</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td>Media Management System (MMS) Media Management Protocol (MMP)<sup id="cite_ref-97" class="reference"><a href="#cite_note-97">[96]</a></sup>
+</td></tr>
+<tr>
+<td>655</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Tinc_(protocol)" title="Tinc (protocol)">Tinc</a> VPN daemon
+</td></tr>
+<tr>
+<td>657</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/IBM" title="IBM">IBM</a> RMC (Remote monitoring and Control) protocol, used by <a href="/wiki/IBM_System_p" title="IBM System p">System p5</a> <a href="/wiki/IBM_AIX" title="IBM AIX">AIX</a> Integrated Virtualization Manager (IVM)<sup id="cite_ref-98" class="reference"><a href="#cite_note-98">[97]</a></sup> and <a href="/wiki/IBM_Hardware_Management_Console" title="IBM Hardware Management Console">Hardware Management Console</a> to connect managed <a href="/wiki/LPAR" class="mw-redirect" title="LPAR">logical partitions (LPAR)</a> to enable dynamic partition reconfiguration
+</td></tr>
+<tr>
+<td>660</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/MacOS_Server" title="MacOS Server">macOS Server</a> administration,<sup id="cite_ref-IANA_2-7" class="reference"><a href="#cite_note-IANA-2">[2]</a></sup> version 10.4 and earlier<sup id="cite_ref-apple-kb-HT202944_11-36" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup>
+</td></tr>
+<tr>
+<td rowspan="2"><a href="/wiki/Number_of_the_beast" title="Number of the beast">666</a>
+</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Doom_(franchise)" title="Doom (franchise)">Doom</a>, the first online <a href="/wiki/First-person_shooter" title="First-person shooter">first-person shooter</a>
+</td></tr>
+<tr>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td><a rel="nofollow" class="external text" href="http://www.aircrack-ng.org/doku.php?id=airserv-ng">airserv-ng</a>, <a href="/wiki/Aircrack-ng" title="Aircrack-ng">aircrack-ng</a>'s server for remote-controlling wireless devices
+</td></tr>
+<tr>
+<td>674</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Application_Configuration_Access_Protocol" title="Application Configuration Access Protocol">Application Configuration Access Protocol</a> (ACAP)
+</td></tr>
+<tr>
+<td>688</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>REALM-RUSD (ApplianceWare Server Appliance Management Protocol)
+</td></tr>
+<tr>
+<td>690</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>Velneo Application Transfer Protocol (VATP)
+</td></tr>
+<tr>
+<td>691</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Microsoft" title="Microsoft">MS</a> <a href="/wiki/Microsoft_Exchange_Server" title="Microsoft Exchange Server">Exchange</a> Routing
+</td></tr>
+<tr>
+<td>694</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Linux-HA" title="Linux-HA">Linux-HA</a> high-availability heartbeat
+</td></tr>
+<tr>
+<td>695</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/IEEE" class="mw-redirect" title="IEEE">IEEE</a> Media Management System over <a href="/wiki/Transport_Layer_Security" title="Transport Layer Security">SSL</a> (IEEE-MMS-SSL)<sup id="cite_ref-99" class="reference"><a href="#cite_note-99">[98]</a></sup>
+</td></tr>
+<tr>
+<td>698</td>
+<td></td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Optimized_Link_State_Routing_protocol" class="mw-redirect" title="Optimized Link State Routing protocol">Optimized Link State Routing</a> (OLSR)
+</td></tr>
+<tr>
+<td>700</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Extensible_Provisioning_Protocol" title="Extensible Provisioning Protocol">Extensible Provisioning Protocol</a> (EPP), a protocol for communication between <a href="/wiki/Domain_name_registry" title="Domain name registry">domain name registries</a> and <a href="/wiki/Domain_name_registrar" title="Domain name registrar">registrars</a> (RFC 5734)
+</td></tr>
+<tr>
+<td>701</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td>Link Management Protocol (LMP),<sup id="cite_ref-100" class="reference"><a href="#cite_note-100">[99]</a></sup> a protocol that runs between a pair of <a href="/wiki/Node_(networking)" title="Node (networking)">nodes</a> and is used to manage <a href="/wiki/Teletraffic_engineering" title="Teletraffic engineering">traffic engineering</a> (TE) <a href="/wiki/Telecommunications_link" title="Telecommunications link">links</a>
+</td></tr>
+<tr>
+<td>702</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td>IRIS<sup id="cite_ref-101" class="reference"><a href="#cite_note-101">[100]</a></sup><sup id="cite_ref-102" class="reference"><a href="#cite_note-102">[101]</a></sup> (Internet Registry Information Service) over <a href="/wiki/BEEP" title="BEEP">BEEP</a> (Blocks Extensible Exchange Protocol)<sup id="cite_ref-103" class="reference"><a href="#cite_note-103">[102]</a></sup> (RFC 3983)
+</td></tr>
+<tr>
+<td>706</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/SILC_(protocol)" title="SILC (protocol)">Secure Internet Live Conferencing</a> (SILC)
+</td></tr>
+<tr>
+<td>711</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Cisco" title="Cisco">Cisco</a> Tag Distribution Protocol<sup id="cite_ref-104" class="reference"><a href="#cite_note-104">[103]</a></sup><sup id="cite_ref-105" class="reference"><a href="#cite_note-105">[104]</a></sup><sup id="cite_ref-106" class="reference"><a href="#cite_note-106">[105]</a></sup>—being replaced by the MPLS <a href="/wiki/Label_Distribution_Protocol" title="Label Distribution Protocol">Label Distribution Protocol</a><sup id="cite_ref-107" class="reference"><a href="#cite_note-107">[106]</a></sup>
+</td></tr>
+<tr>
+<td>712</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Topology_Broadcast_based_on_Reverse-Path_Forwarding_routing_protocol" class="mw-redirect" title="Topology Broadcast based on Reverse-Path Forwarding routing protocol">Topology Broadcast based on Reverse-Path Forwarding routing protocol</a> (TBRPF; RFC 3684)
+</td></tr>
+<tr>
+<td>749</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>Kerberos administration<sup id="cite_ref-apple-kb-HT202944_11-37" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup>
+</td></tr>
+<tr>
+<td>750</td>
+<td></td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>kerberos-iv, <a href="/wiki/Kerberos_(protocol)" title="Kerberos (protocol)">Kerberos</a> version IV
+</td></tr>
+<tr>
+<td>751</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td>
+</td>
+<td>kerberos_master, Kerberos authentication
+</td></tr>
+<tr>
+<td>752</td>
+<td></td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td>
+</td>
+<td>passwd_server, Kerberos password (kpasswd) server
+</td></tr>
+<tr>
+<td rowspan="2">753
+</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>Reverse Routing Header (RRH)<sup id="cite_ref-108" class="reference"><a href="#cite_note-108">[107]</a></sup>
+</td></tr>
+<tr>
+<td></td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td>
+</td>
+<td>userreg_server, Kerberos userreg server
+</td></tr>
+<tr>
+<td rowspan="2">754
+</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>tell send
+</td></tr>
+<tr>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td>krb5_prop, Kerberos v5 slave propagation
+</td></tr>
+<tr>
+<td>760</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td>
+</td>
+<td>krbupdate [kreg], Kerberos registration
+</td></tr>
+<tr>
+<td>782</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Conserver" title="Conserver">Conserver</a> serial-console management server
+</td></tr>
+<tr>
+<td>783</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/SpamAssassin" class="mw-redirect" title="SpamAssassin">SpamAssassin</a> spamd daemon
+</td></tr>
+<tr>
+<td>800</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>mdbs-daemon
+</td></tr>
+<tr>
+<td>802</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Modbus" title="Modbus">MODBUS</a>/TCP Security<sup id="cite_ref-mbap-s_109-0" class="reference"><a href="#cite_note-mbap-s-109">[108]</a></sup>
+</td></tr>
+<tr>
+<td>808</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td>Microsoft Net.TCP Port Sharing Service
+</td></tr>
+<tr>
+<td>829</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Certificate_Management_Protocol" title="Certificate Management Protocol">Certificate Management Protocol</a><sup id="cite_ref-rfc4210_110-0" class="reference"><a href="#cite_note-rfc4210-110">[109]</a></sup>
+</td></tr>
+<tr>
+<td>830</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/NETCONF" title="NETCONF">NETCONF</a> over <a href="/wiki/Secure_Shell" title="Secure Shell">SSH</a>
+</td></tr>
+<tr>
+<td>831</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>NETCONF over <a href="/wiki/BEEP" title="BEEP">BEEP</a>
+</td></tr>
+<tr>
+<td>832</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>NETCONF for <a href="/wiki/SOAP" title="SOAP">SOAP</a> over HTTPS
+</td></tr>
+<tr>
+<td>833</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>NETCONF for SOAP over BEEP
+</td></tr>
+<tr>
+<td>843</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Adobe_Flash" title="Adobe Flash">Adobe Flash</a><sup id="cite_ref-111" class="reference"><a href="#cite_note-111">[110]</a></sup>
+</td></tr>
+<tr>
+<td>847</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Dynamic_Host_Configuration_Protocol#Reliability" title="Dynamic Host Configuration Protocol">DHCP Failover</a> protocol
+</td></tr>
+<tr>
+<td>848</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>Group Domain Of Interpretation (GDOI) protocol
+</td></tr>
+<tr>
+<td rowspan="2">853
+</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/DNS_over_TLS" title="DNS over TLS">DNS over TLS</a> (RFC 7858)
+</td></tr>
+<tr>
+<td></td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>DNS over QUIC or DNS over DTLS<sup id="cite_ref-112" class="reference"><a href="#cite_note-112">[111]</a></sup>
+</td></tr>
+<tr>
+<td>860</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/ISCSI" title="ISCSI">iSCSI</a> (RFC 3720)
+</td></tr>
+<tr>
+<td>861</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>OWAMP control (RFC 4656)
+</td></tr>
+<tr>
+<td>862</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>TWAMP control (RFC 5357)
+</td></tr>
+<tr>
+<td>873</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Rsync" title="Rsync">rsync</a> file synchronization protocol
+</td></tr>
+<tr>
+<td rowspan="2">888
+</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td>cddbp, <a href="/wiki/CD_database" class="mw-redirect" title="CD database">CD DataBase</a> (<a href="/wiki/CDDB" title="CDDB">CDDB</a>) protocol (CDDBP)
+</td></tr>
+<tr>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td>IBM Endpoint Manager Remote Control
+</td></tr>
+<tr>
+<td>897</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Brocade_Communications_Systems" title="Brocade Communications Systems">Brocade</a> SMI-S RPC
+</td></tr>
+<tr>
+<td>898</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td>
+</td>
+<td>Brocade SMI-S RPC SSL
+</td></tr>
+<tr>
+<td>902</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/VMware_ESXi" title="VMware ESXi">VMware ESXi</a><sup id="cite_ref-vmware-kb-1022256_113-0" class="reference"><a href="#cite_note-vmware-kb-1022256-113">[112]</a></sup><sup id="cite_ref-vmware-kb-1005189_114-0" class="reference"><a href="#cite_note-vmware-kb-1005189-114">[113]</a></sup>
+</td></tr>
+<tr>
+<td>903</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td>VMware ESXi<sup id="cite_ref-vmware-kb-1022256_113-1" class="reference"><a href="#cite_note-vmware-kb-1022256-113">[112]</a></sup><sup id="cite_ref-vmware-kb-1005189_114-1" class="reference"><a href="#cite_note-vmware-kb-1005189-114">[113]</a></sup>
+</td></tr>
+<tr>
+<td>953</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">Reserved</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/BIND" title="BIND">BIND</a> remote name daemon control (RNDC)<sup id="cite_ref-centos-5-deployment-rndc_115-0" class="reference"><a href="#cite_note-centos-5-deployment-rndc-115">[114]</a></sup><sup id="cite_ref-man-rndc.8_116-0" class="reference"><a href="#cite_note-man-rndc.8-116">[115]</a></sup>
+</td></tr>
+<tr>
+<td>981</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td>Remote HTTPS management for firewall devices running embedded <a href="/wiki/Check_Point_VPN-1" title="Check Point VPN-1">Check Point VPN-1</a> software<sup id="cite_ref-fw-1-ports-ng_117-0" class="reference"><a href="#cite_note-fw-1-ports-ng-117">[116]</a></sup>
+</td></tr>
+<tr>
+<td rowspan="2">987
+</td>
+<td></td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td>
+</td>
+<td>Sony PlayStation Wake On Lan
+</td></tr>
+<tr>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Microsoft_Remote_Web_Workplace" title="Microsoft Remote Web Workplace">Microsoft Remote Web Workplace</a>, a feature of <a href="/wiki/Windows_Small_Business_Server" class="mw-redirect" title="Windows Small Business Server">Windows Small Business Server</a><sup id="cite_ref-msft-tn-cc52751_118-0" class="reference"><a href="#cite_note-msft-tn-cc52751-118">[117]</a></sup>
+</td></tr>
+<tr>
+<td>988</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Lustre_(file_system)" title="Lustre (file system)">Lustre (file system)</a><sup id="cite_ref-119" class="reference"><a href="#cite_note-119">[118]</a></sup> Protocol (data).
+</td></tr>
+<tr>
+<td>989</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/FTPS" title="FTPS">FTPS</a> Protocol (data), <a href="/wiki/FTP" class="mw-redirect" title="FTP">FTP</a> over <a href="/wiki/Transport_Layer_Security" title="Transport Layer Security">TLS/SSL</a>
+</td></tr>
+<tr>
+<td>990</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td>FTPS Protocol (control), FTP over TLS/SSL
+</td></tr>
+<tr>
+<td>991</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Netnews" class="mw-redirect" title="Netnews">Netnews</a> Administration System (NAS)<sup id="cite_ref-120" class="reference"><a href="#cite_note-120">[119]</a></sup>
+</td></tr>
+<tr>
+<td>992</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Telnet" title="Telnet">Telnet</a> protocol over TLS/SSL
+</td></tr>
+<tr>
+<td>993</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background: #FF8; vertical-align: middle; text-align: center;" class="table-maybe">Assigned</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Internet_Message_Access_Protocol" title="Internet Message Access Protocol">Internet Message Access Protocol</a> over <a href="/wiki/Transport_Layer_Security" title="Transport Layer Security">TLS/SSL</a> (IMAPS)<sup id="cite_ref-apple-kb-HT202944_11-38" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup>
+</td></tr>
+<tr>
+<td>994</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">Reserved</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">Reserved</td>
+<td></td>
+<td>
+</td>
+<td>Previously assigned to <a href="/wiki/Internet_Relay_Chat" title="Internet Relay Chat">Internet Relay Chat</a> over <a href="/wiki/Transport_Layer_Security" title="Transport Layer Security">TLS/SSL</a> (IRCS), but was not used in common practice.
+</td></tr>
+<tr>
+<td>995</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Post_Office_Protocol" title="Post Office Protocol">Post Office Protocol</a> 3 over <a href="/wiki/Transport_Layer_Security" title="Transport Layer Security">TLS/SSL</a> (POP3S)<sup id="cite_ref-apple-kb-HT202944_11-39" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup>
+</td></tr>
+<tr>
+<td>1010</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/ThinLinc" title="ThinLinc">ThinLinc</a> web-based administration interface<sup id="cite_ref-cendio-docs-tag-tcp-ports_121-0" class="reference"><a href="#cite_note-cendio-docs-tag-tcp-ports-121">[120]</a></sup>
+</td></tr>
+<tr>
+<td>1011–1020</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">Reserved</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">Reserved</td>
+<td></td>
+<td>
+</td>
+<td>
+</td></tr>
+<tr>
+<td rowspan="2">1023
+</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">Reserved</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; text-align: center;" class="table-na">Reserved</td>
+<td></td>
+<td>
+</td>
+<td><sup id="cite_ref-IANA_2-8" class="reference"><a href="#cite_note-IANA-2">[2]</a></sup>
+</td></tr>
+<tr>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td style="background: #8FD; vertical-align: middle; text-align: center;" class="partial table-partial">Unofficial</td>
+<td></td>
+<td>
+</td>
+<td><a href="/wiki/Z/OS" title="Z/OS">z/OS</a> Network File System (NFS) (potentially ports 991–1023)<sup id="cite_ref-rfc7194_79-1" class="reference"><a href="#cite_note-rfc7194-79">[79]</a></sup><sup id="cite_ref-rfc1227_80-1" class="reference"><a href="#cite_note-rfc1227-80">[80]</a></sup><sup id="cite_ref-ibm-zos-surpp_122-0" class="reference"><a href="#cite_note-ibm-zos-surpp-122">[121]</a></sup>
+</td></tr></tbody><tfoot></tfoot></table>

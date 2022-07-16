@@ -20,7 +20,7 @@ public class Port implements Serializable {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "port")
+    @Column(name = "port", unique = true)
     private Long port;
 
     @Column(name = "is_tcp")

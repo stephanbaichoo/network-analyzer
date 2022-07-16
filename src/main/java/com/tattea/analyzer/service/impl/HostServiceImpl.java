@@ -21,14 +21,17 @@ import org.springframework.transaction.annotation.Transactional;
 public class HostServiceImpl implements HostService {
 
     private final Logger log = LoggerFactory.getLogger(HostServiceImpl.class);
-
     private final HostRepository hostRepository;
-
     private final HostMapper hostMapper;
 
     public HostServiceImpl(HostRepository hostRepository, HostMapper hostMapper) {
         this.hostRepository = hostRepository;
         this.hostMapper = hostMapper;
+    }
+
+    @Override
+    public Optional<HostDTO> findOneByIp(String ip) {
+        return hostRepository.findFirstByIpAddress(ip).map(hostMapper::toDto);
     }
 
     @Override

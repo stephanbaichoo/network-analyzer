@@ -1,0 +1,32 @@
+{
+  "changelogDate": "20220716080223",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "date",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "time",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "trap",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "values",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "trigger",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": false,
+  "name": "Trap",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

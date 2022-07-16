@@ -50,6 +50,14 @@ public interface HostService {
     Optional<HostDTO> findOne(Long id);
 
     /**
+     * Get the "id" host.
+     *
+     * @param id the id of the entity.
+     * @return the entity.
+     */
+    Optional<HostDTO> findOneByIp(String ip);
+
+    /**
      * Delete the "id" host.
      *
      * @param id the id of the entity.

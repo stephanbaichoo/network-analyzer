@@ -5,6 +5,11 @@ import { RouterModule } from '@angular/router';
   imports: [
     RouterModule.forChild([
       {
+        path: 'trap',
+        data: { pageTitle: 'Traps' },
+        loadChildren: () => import('./trap/trap.module').then(m => m.TrapModule),
+      },
+      {
         path: 'netflow',
         data: { pageTitle: 'Netflows' },
         loadChildren: () => import('./netflow/netflow.module').then(m => m.NetflowModule),

@@ -1,0 +1,48 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="trap">
+      <h2 data-cy="trapDetailsHeading"><span>Trap</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span>ID</span></dt>
+        <dd>
+          <span>{{ trap.id }}</span>
+        </dd>
+        <dt><span>Date</span></dt>
+        <dd>
+          <span>{{ trap.date | formatMediumDate }}</span>
+        </dd>
+        <dt><span>Time</span></dt>
+        <dd>
+          <span>{{ trap.time }}</span>
+        </dd>
+        <dt><span>Trap</span></dt>
+        <dd>
+          <span>{{ trap.trap }}</span>
+        </dd>
+        <dt><span>Values</span></dt>
+        <dd>
+          <span>{{ trap.values }}</span>
+        </dd>
+        <dt><span>Trigger</span></dt>
+        <dd>
+          <span>{{ trap.trigger }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/trap', trap.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

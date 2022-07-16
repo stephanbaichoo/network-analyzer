@@ -2,10 +2,16 @@ package com.tattea.analyzer.service.dto;
 
 import java.io.Serializable;
 import java.util.Objects;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
 
 /**
  * A DTO for the {@link com.tattea.analyzer.domain.Host} entity.
  */
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class HostDTO implements Serializable {
 
     private Long id;

@@ -23,7 +23,7 @@ public class Host implements Serializable {
     @Column(name = "host_name")
     private String hostName;
 
-    @Column(name = "ip_address")
+    @Column(name = "ip_address", unique = true)
     private String ipAddress;
 
     @Column(name = "asname")
