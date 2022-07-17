@@ -1,0 +1,301 @@
+Sun Jul 17 00:06:56 2022: Unknown trap (.1.3.6.1.4.1.9.9.43.2.0.1) received from _gateway at: 
+Value 0: _gateway
+Value 1: 10.0.0.254
+Value 2: 1:10:24:33.59
+Value 3: .1.3.6.1.4.1.9.9.43.2.0.1
+Value 4: 10.0.0.254
+Value 5: 
+Value 6: 
+Value 7: 
+Value 8: 
+Value 9: 
+Value 10: 
+Ent Value 0: .1.3.6.1.4.1.9.9.43.1.1.6.1.3.15=1
+Ent Value 1: .1.3.6.1.4.1.9.9.43.1.1.6.1.4.15=2
+Ent Value 2: .1.3.6.1.4.1.9.9.43.1.1.6.1.5.15=3
+
+
+Sun Jul 17 00:06:56 2022: Unknown trap (.1.3.6.1.4.1.9.9.43.2.0.1) received from _gateway at: 
+Value 0: _gateway
+Value 1: 10.0.0.254
+Value 2: 1:10:24:33.59
+Value 3: .1.3.6.1.4.1.9.9.43.2.0.1
+Value 4: 10.0.0.254
+Value 5: 
+Value 6: 
+Value 7: 
+Value 8: 
+Value 9: 
+Value 10: 
+Ent Value 0: .1.3.6.1.4.1.9.9.43.1.1.6.1.3.15=1
+Ent Value 1: .1.3.6.1.4.1.9.9.43.1.1.6.1.4.15=2
+Ent Value 2: .1.3.6.1.4.1.9.9.43.1.1.6.1.5.15=3
+
+
+Sun Jul 17 00:07:13 2022: Unknown trap (.1.3.6.1.4.1.9.9.138.2.0.1) received from 10.0.0.254 at: 
+Value 0: 10.0.0.254
+Value 1: 10.0.0.254
+Value 2: 1:10:24:41.57
+Value 3: .1.3.6.1.4.1.9.9.138.2.0.1
+Value 4: 10.0.0.254
+Value 5: 
+Value 6: 
+Value 7: 
+Value 8: 
+Value 9: 
+Value 10: 
+Ent Value 0: .1.3.6.1.4.1.9.9.138.1.3.3.1.3.26=52
+Ent Value 1: .1.3.6.1.4.1.9.9.138.1.3.3.1.4.26=2
+Ent Value 2: .1.3.6.1.4.1.9.9.138.1.3.3.1.5.26=4
+Ent Value 3: .1.3.6.1.4.1.9.9.138.1.3.3.1.6.26=12388157
+Ent Value 4: .1.3.6.1.4.1.9.9.138.1.1.2.1.3.2.2=Physical Port Administrative State Down
+
+
+Sun Jul 17 00:07:18 2022: Unknown trap (.1.3.6.1.4.1.9.9.138.2.0.1) received from _gateway at: 
+Value 0: _gateway
+Value 1: 10.0.0.254
+Value 2: 1:10:24:41.57
+Value 3: .1.3.6.1.4.1.9.9.138.2.0.1
+Value 4: 10.0.0.254
+Value 5: 
+Value 6: 
+Value 7: 
+Value 8: 
+Value 9: 
+Value 10: 
+Ent Value 0: .1.3.6.1.4.1.9.9.138.1.3.3.1.3.26=52
+Ent Value 1: .1.3.6.1.4.1.9.9.138.1.3.3.1.4.26=2
+Ent Value 2: .1.3.6.1.4.1.9.9.138.1.3.3.1.5.26=4
+Ent Value 3: .1.3.6.1.4.1.9.9.138.1.3.3.1.6.26=12388157
+Ent Value 4: .1.3.6.1.4.1.9.9.138.1.1.2.1.3.2.2=Physical Port Administrative State Down
+
+
+Sun Jul 17 00:07:19 2022: Unknown trap (.1.3.6.1.4.1.9.9.138.2.0.2) received from _gateway at: 
+Value 0: _gateway
+Value 1: 10.0.0.254
+Value 2: 1:10:24:54.81
+Value 3: .1.3.6.1.4.1.9.9.138.2.0.2
+Value 4: 10.0.0.254
+Value 5: 
+Value 6: 
+Value 7: 
+Value 8: 
+Value 9: 
+Value 10: 
+Ent Value 0: .1.3.6.1.4.1.9.9.138.1.3.3.1.3.27=52
+Ent Value 1: .1.3.6.1.4.1.9.9.138.1.3.3.1.4.27=2
+Ent Value 2: .1.3.6.1.4.1.9.9.138.1.3.3.1.5.27=4
+Ent Value 3: .1.3.6.1.4.1.9.9.138.1.3.3.1.6.27=12389481
+Ent Value 4: .1.3.6.1.4.1.9.9.138.1.1.2.1.3.2.2=Physical Port Administrative State Down
+
+
+Sun Jul 17 00:07:20 2022: Unknown trap (.1.3.6.1.4.1.9.9.138.2.0.2) received from _gateway at: 
+Value 0: _gateway
+Value 1: 10.0.0.254
+Value 2: 1:10:24:54.81
+Value 3: .1.3.6.1.4.1.9.9.138.2.0.2
+Value 4: 10.0.0.254
+Value 5: 
+Value 6: 
+Value 7: 
+Value 8: 
+Value 9: 
+Value 10: 
+Ent Value 0: .1.3.6.1.4.1.9.9.138.1.3.3.1.3.27=52
+Ent Value 1: .1.3.6.1.4.1.9.9.138.1.3.3.1.4.27=2
+Ent Value 2: .1.3.6.1.4.1.9.9.138.1.3.3.1.5.27=4
+Ent Value 3: .1.3.6.1.4.1.9.9.138.1.3.3.1.6.27=12389481
+Ent Value 4: .1.3.6.1.4.1.9.9.138.1.1.2.1.3.2.2=Physical Port Administrative State Down
+
+
+Sun Jul 17 00:11:05 2022: Unknown trap (.1.3.6.1.4.1.8072.2.3.0.1) received from 10.0.0.2 at: 
+Value 0: 10.0.0.2
+Value 1: 10.0.0.2
+Value 2: 0:21:21:23.62
+Value 3: .1.3.6.1.4.1.8072.2.3.0.1
+Value 4: 10.0.0.2
+Value 5: 
+Value 6: 
+Value 7: 
+Value 8: 
+Value 9: 
+Value 10: 
+Ent Value 0: .1.3.6.1.4.1.8072.2.3.2.1=hello
+
+
+Sun Jul 17 04:52:16 2022: Unknown trap (.1.3.6.1.4.1.9.9.43.2.0.1) received from _gateway at: 
+Value 0: _gateway
+Value 1: 10.0.0.254
+Value 2: 1:15:09:54.88
+Value 3: .1.3.6.1.4.1.9.9.43.2.0.1
+Value 4: 10.0.0.254
+Value 5: 
+Value 6: 
+Value 7: 
+Value 8: 
+Value 9: 
+Value 10: 
+Ent Value 0: .1.3.6.1.4.1.9.9.43.1.1.6.1.3.16=1
+Ent Value 1: .1.3.6.1.4.1.9.9.43.1.1.6.1.4.16=3
+Ent Value 2: .1.3.6.1.4.1.9.9.43.1.1.6.1.5.16=2
+
+
+Sun Jul 17 04:52:16 2022: Unknown trap (.1.3.6.1.4.1.9.9.43.2.0.1) received from _gateway at: 
+Value 0: _gateway
+Value 1: 10.0.0.254
+Value 2: 1:15:09:54.88
+Value 3: .1.3.6.1.4.1.9.9.43.2.0.1
+Value 4: 10.0.0.254
+Value 5: 
+Value 6: 
+Value 7: 
+Value 8: 
+Value 9: 
+Value 10: 
+Ent Value 0: .1.3.6.1.4.1.9.9.43.1.1.6.1.3.16=1
+Ent Value 1: .1.3.6.1.4.1.9.9.43.1.1.6.1.4.16=3
+Ent Value 2: .1.3.6.1.4.1.9.9.43.1.1.6.1.5.16=2
+
+
+Sun Jul 17 04:52:20 2022: Unknown trap (.1.3.6.1.4.1.9.9.43.2.0.1) received from _gateway at: 
+Value 0: _gateway
+Value 1: 10.0.0.254
+Value 2: 1:15:09:58.74
+Value 3: .1.3.6.1.4.1.9.9.43.2.0.1
+Value 4: 10.0.0.254
+Value 5: 
+Value 6: 
+Value 7: 
+Value 8: 
+Value 9: 
+Value 10: 
+Ent Value 0: .1.3.6.1.4.1.9.9.43.1.1.6.1.3.17=1
+Ent Value 1: .1.3.6.1.4.1.9.9.43.1.1.6.1.4.17=3
+Ent Value 2: .1.3.6.1.4.1.9.9.43.1.1.6.1.5.17=2
+
+
+Sun Jul 17 04:52:20 2022: Unknown trap (.1.3.6.1.4.1.9.9.43.2.0.1) received from _gateway at: 
+Value 0: _gateway
+Value 1: 10.0.0.254
+Value 2: 1:15:09:58.74
+Value 3: .1.3.6.1.4.1.9.9.43.2.0.1
+Value 4: 10.0.0.254
+Value 5: 
+Value 6: 
+Value 7: 
+Value 8: 
+Value 9: 
+Value 10: 
+Ent Value 0: .1.3.6.1.4.1.9.9.43.1.1.6.1.3.17=1
+Ent Value 1: .1.3.6.1.4.1.9.9.43.1.1.6.1.4.17=3
+Ent Value 2: .1.3.6.1.4.1.9.9.43.1.1.6.1.5.17=2
+
+
+Sun Jul 17 04:52:22 2022: Unknown trap (.1.3.6.1.4.1.9.9.43.2.0.1) received from _gateway at: 
+Value 0: _gateway
+Value 1: 10.0.0.254
+Value 2: 1:15:10:01.39
+Value 3: .1.3.6.1.4.1.9.9.43.2.0.1
+Value 4: 10.0.0.254
+Value 5: 
+Value 6: 
+Value 7: 
+Value 8: 
+Value 9: 
+Value 10: 
+Ent Value 0: .1.3.6.1.4.1.9.9.43.1.1.6.1.3.18=1
+Ent Value 1: .1.3.6.1.4.1.9.9.43.1.1.6.1.4.18=3
+Ent Value 2: .1.3.6.1.4.1.9.9.43.1.1.6.1.5.18=2
+
+
+Sun Jul 17 04:52:23 2022: Unknown trap (.1.3.6.1.4.1.9.9.43.2.0.1) received from _gateway at: 
+Value 0: _gateway
+Value 1: 10.0.0.254
+Value 2: 1:15:10:01.39
+Value 3: .1.3.6.1.4.1.9.9.43.2.0.1
+Value 4: 10.0.0.254
+Value 5: 
+Value 6: 
+Value 7: 
+Value 8: 
+Value 9: 
+Value 10: 
+Ent Value 0: .1.3.6.1.4.1.9.9.43.1.1.6.1.3.18=1
+Ent Value 1: .1.3.6.1.4.1.9.9.43.1.1.6.1.4.18=3
+Ent Value 2: .1.3.6.1.4.1.9.9.43.1.1.6.1.5.18=2
+
+
+Sun Jul 17 05:22:00 2022: Unknown trap (.1.3.6.1.4.1.9.9.43.2.0.1) received from _gateway at: 
+Value 0: _gateway
+Value 1: 10.0.0.254
+Value 2: 1:15:39:39.16
+Value 3: .1.3.6.1.4.1.9.9.43.2.0.1
+Value 4: 10.0.0.254
+Value 5: 
+Value 6: 
+Value 7: 
+Value 8: 
+Value 9: 
+Value 10: 
+Ent Value 0: .1.3.6.1.4.1.9.9.43.1.1.6.1.3.19=1
+Ent Value 1: .1.3.6.1.4.1.9.9.43.1.1.6.1.4.19=3
+Ent Value 2: .1.3.6.1.4.1.9.9.43.1.1.6.1.5.19=2
+
+
+Sun Jul 17 05:22:00 2022: Unknown trap (.1.3.6.1.4.1.9.9.43.2.0.1) received from _gateway at: 
+Value 0: _gateway
+Value 1: 10.0.0.254
+Value 2: 1:15:39:39.16
+Value 3: .1.3.6.1.4.1.9.9.43.2.0.1
+Value 4: 10.0.0.254
+Value 5: 
+Value 6: 
+Value 7: 
+Value 8: 
+Value 9: 
+Value 10: 
+Ent Value 0: .1.3.6.1.4.1.9.9.43.1.1.6.1.3.19=1
+Ent Value 1: .1.3.6.1.4.1.9.9.43.1.1.6.1.4.19=3
+Ent Value 2: .1.3.6.1.4.1.9.9.43.1.1.6.1.5.19=2
+
+
+Sun Jul 17 18:54:27 2022: Unknown trap (.1.3.6.1.4.1.9.0.1) received from _gateway at: 
+Value 0: _gateway
+Value 1: 10.0.0.254
+Value 2: 2:5:12:01.48
+Value 3: .1.3.6.1.4.1.9.0.1
+Value 4: 10.0.0.254
+Value 5: 
+Value 6: 
+Value 7: 
+Value 8: 
+Value 9: 
+Value 10: 
+Ent Value 0: .1.3.6.1.4.1.9.2.9.3.1.1.3.1=5
+Ent Value 1: .1.3.6.1.2.1.6.13.1.1.10.0.0.254.23.10.0.0.2.39360=5
+Ent Value 2: .1.3.6.1.4.1.9.2.6.1.1.5.10.0.0.254.23.10.0.0.2.39360=5063645
+Ent Value 3: .1.3.6.1.4.1.9.2.6.1.1.1.10.0.0.254.23.10.0.0.2.39360=177
+Ent Value 4: .1.3.6.1.4.1.9.2.6.1.1.2.10.0.0.254.23.10.0.0.2.39360=13017
+Ent Value 5: .1.3.6.1.4.1.9.2.9.2.1.18.3=
+
+
+Sun Jul 17 18:54:27 2022: Unknown trap (.1.3.6.1.4.1.9.0.1) received from _gateway at: 
+Value 0: _gateway
+Value 1: 10.0.0.254
+Value 2: 2:5:12:01.48
+Value 3: .1.3.6.1.4.1.9.0.1
+Value 4: 10.0.0.254
+Value 5: 
+Value 6: 
+Value 7: 
+Value 8: 
+Value 9: 
+Value 10: 
+Ent Value 0: .1.3.6.1.4.1.9.2.9.3.1.1.3.1=5
+Ent Value 1: .1.3.6.1.2.1.6.13.1.1.10.0.0.254.23.10.0.0.2.39360=5
+Ent Value 2: .1.3.6.1.4.1.9.2.6.1.1.5.10.0.0.254.23.10.0.0.2.39360=5063645
+Ent Value 3: .1.3.6.1.4.1.9.2.6.1.1.1.10.0.0.254.23.10.0.0.2.39360=177
+Ent Value 4: .1.3.6.1.4.1.9.2.6.1.1.2.10.0.0.254.23.10.0.0.2.39360=13017
+Ent Value 5: .1.3.6.1.4.1.9.2.9.2.1.18.3=
+
+
