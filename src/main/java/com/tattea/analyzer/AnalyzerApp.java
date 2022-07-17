@@ -2,6 +2,7 @@ package com.tattea.analyzer;
 
 import com.tattea.analyzer.config.ApplicationProperties;
 import com.tattea.analyzer.service.port.PortScrapper;
+import com.tattea.analyzer.service.snmp.SNMPReader;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Arrays;
@@ -30,9 +31,12 @@ public class AnalyzerApp implements CommandLineRunner {
 
     private final PortScrapper portScrapper;
 
-    public AnalyzerApp(Environment env, PortScrapper portScrapper) {
+    private final SNMPReader snmpReader;
+
+    public AnalyzerApp(Environment env, PortScrapper portScrapper, SNMPReader snmpReader) {
         this.env = env;
         this.portScrapper = portScrapper;
+        this.snmpReader = snmpReader;
     }
 
     /**
@@ -108,6 +112,8 @@ public class AnalyzerApp implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        portScrapper.buildPorts();
+        //portScrapper.buildPorts();
+
+        snmpReader.getTraps();
     }
 }
