@@ -3,18 +3,22 @@ package com.tattea.analyzer.service.port;
 import com.tattea.analyzer.domain.Port;
 import com.tattea.analyzer.service.PortService;
 import com.tattea.analyzer.service.dto.PortDTO;
-import java.io.File;
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVParser;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.testcontainers.shaded.org.apache.commons.io.FileUtils;
+
+import java.io.IOException;
+import java.io.Reader;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
 
 /**
  * Service Implementation for scraping {@link Port} Data .
@@ -23,10 +27,9 @@ import org.testcontainers.shaded.org.apache.commons.io.FileUtils;
 @Transactional
 public class PortScrapper {
 
-    private static final String WELL_KNOWN_PORTS = "wikipedia_ports_1.txt";
+    private static final String WELL_KNOWN_PORTS = "/home/tattea/network-analyzer/src/main/resources/wikipedia_ports.csv";
 
-    private static final String REGISTERED_PORTS = "wikipedia_ports_2.txt";
-
+    private static final Integer portMax = 1023;
     private final PortService portService;
 
     @Autowired
@@ -34,34 +37,34 @@ public class PortScrapper {
         this.portService = portService;
     }
 
-    public void buildPorts() {}
+    public void getWellKnownPorts() {
+        try (
+            Reader reader = Files.newBufferedReader(Paths.get(WELL_KNOWN_PORTS));
+            CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT);
+        ) {
+            csvParser.getRecords()
+                .stream()
+                .skip(1)
+                .map(csvRecord -> {
+                    if (!StringUtils.isNumeric(csvRecord.get(0))) {
+                        return null;
+                    }
 
-    public List<PortDTO> getWellKnownPorts() {
-        Pattern patternRow = Pattern.compile("<tr>(.*?)</tr>");
-        String fileText = "";
-        List<String> rows = new ArrayList<>();
-
-        File file = new File(WELL_KNOWN_PORTS);
-
-        try {
-            List<String> lines = FileUtils.readLines(file, StandardCharsets.UTF_8);
-            fileText = String.join("", lines);
+                    return PortDTO.builder()
+                        .port(Long.parseLong(csvRecord.get(0)))
+                        .name(csvRecord.get(3))
+                        .isTCP(csvRecord.get(1))
+                        .isUDP(csvRecord.get(2))
+                        .build();
+                })
+                .filter(Objects::nonNull)
+                .forEach(portService::save);
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        final Matcher matcher = patternRow.matcher(fileText);
-        while (matcher.find()) {
-            rows.add(matcher.group(0));
-        }
-
-        rows.forEach(System.out::println);
-        return null;
     }
 
-    public List<PortDTO> getRegisteredPorts() {
-        return null;
-    }
 
     public enum Legend {
         YES("Described protocol is assigned by IANA for this port, and is: standardized, specified, or widely used for such."),

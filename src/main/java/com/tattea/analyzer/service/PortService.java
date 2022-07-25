@@ -50,6 +50,14 @@ public interface PortService {
     Optional<PortDTO> findOne(Long id);
 
     /**
+     * Get the "id" port.
+     *
+     * @param id the id of the entity.
+     * @return the entity.
+     */
+    Optional<PortDTO> findOneByPort(Long port);
+
+    /**
      * Delete the "id" port.
      *
      * @param id the id of the entity.

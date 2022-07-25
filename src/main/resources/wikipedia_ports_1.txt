@@ -165,7 +165,7 @@
 <td style="background:#9EFF9E;vertical-align:middle;text-align:center;" class="table-yes">Yes<sup id="cite_ref-rfc4960_12-4" class="reference"><a href="#cite_note-rfc4960-12">[12]</a></sup></td>
 <td>
 </td>
-<td><a href="/wiki/Secure_Shell" title="Secure Shell">Secure Shell</a> (SSH),<sup id="cite_ref-apple-kb-HT202944_11-3" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup> secure logins, <a href="/wiki/File_transfer" title="File transfer">file transfers</a> (<a href="/wiki/Secure_copy" class="mw-redirect" title="Secure copy">scp</a>, <a href="/wiki/SSH_file_transfer_protocol" class="mw-redirect" title="SSH file transfer protocol">sftp</a>) and port forwarding
+<td><a href="/wiki/Secu re_Shell" title="Secure Shell">Secure Shell</a> (SSH),<sup id="cite_ref-apple-kb-HT202944_11-3" class="reference"><a href="#cite_note-apple-kb-HT202944-11">[11]</a></sup> secure logins, <a href="/wiki/File_transfer" title="File transfer">file transfers</a> (<a href="/wiki/Secure_copy" class="mw-redirect" title="Secure copy">scp</a>, <a href="/wiki/SSH_file_transfer_protocol" class="mw-redirect" title="SSH file transfer protocol">sftp</a>) and port forwarding
 </td></tr>
 <tr>
 <td>23</td>

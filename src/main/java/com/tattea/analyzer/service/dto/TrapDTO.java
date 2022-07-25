@@ -27,7 +27,7 @@ public class TrapDTO implements Serializable {
 
     private String values;
 
-    private String trigger;
+    private String trigger; // last line
 
     public Long getId() {
         return id;

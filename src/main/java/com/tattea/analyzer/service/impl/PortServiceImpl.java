@@ -5,7 +5,6 @@ import com.tattea.analyzer.repository.PortRepository;
 import com.tattea.analyzer.service.PortService;
 import com.tattea.analyzer.service.dto.PortDTO;
 import com.tattea.analyzer.service.mapper.PortMapper;
-import java.util.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
@@ -13,12 +12,15 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Optional;
+
 /**
  * Service Implementation for managing {@link Port}.
  */
 @Service
 @Transactional
 public class PortServiceImpl implements PortService {
+
 
     private final Logger log = LoggerFactory.getLogger(PortServiceImpl.class);
 
@@ -29,6 +31,11 @@ public class PortServiceImpl implements PortService {
     public PortServiceImpl(PortRepository portRepository, PortMapper portMapper) {
         this.portRepository = portRepository;
         this.portMapper = portMapper;
+    }
+
+    @Override
+    public Optional<PortDTO> findOneByPort(Long port) {
+        return portRepository.findPortByPort(port).map(portMapper::toDto);
     }
 
     @Override

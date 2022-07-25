@@ -1,14 +1,10 @@
 package com.tattea.analyzer;
 
 import com.tattea.analyzer.config.ApplicationProperties;
+import com.tattea.analyzer.service.csv.CSVPeriodicSave;
+import com.tattea.analyzer.service.dashboard.DashboardService;
 import com.tattea.analyzer.service.port.PortScrapper;
 import com.tattea.analyzer.service.snmp.SNMPReader;
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Optional;
-import javax.annotation.PostConstruct;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,8 +17,16 @@ import org.springframework.core.env.Environment;
 import tech.jhipster.config.DefaultProfileUtil;
 import tech.jhipster.config.JHipsterConstants;
 
+import javax.annotation.PostConstruct;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
+import java.util.Optional;
+
 @SpringBootApplication
-@EnableConfigurationProperties({ LiquibaseProperties.class, ApplicationProperties.class })
+@EnableConfigurationProperties({LiquibaseProperties.class, ApplicationProperties.class})
 public class AnalyzerApp implements CommandLineRunner {
 
     private static final Logger log = LoggerFactory.getLogger(AnalyzerApp.class);
@@ -33,10 +37,16 @@ public class AnalyzerApp implements CommandLineRunner {
 
     private final SNMPReader snmpReader;
 
-    public AnalyzerApp(Environment env, PortScrapper portScrapper, SNMPReader snmpReader) {
+    private final CSVPeriodicSave csvPeriodicSave;
+
+    private final DashboardService dashboardService;
+
+    public AnalyzerApp(Environment env, PortScrapper portScrapper, SNMPReader snmpReader, CSVPeriodicSave csvPeriodicSave, DashboardService dashboardService) {
         this.env = env;
         this.portScrapper = portScrapper;
         this.snmpReader = snmpReader;
+        this.csvPeriodicSave = csvPeriodicSave;
+        this.dashboardService = dashboardService;
     }
 
     /**
@@ -51,7 +61,7 @@ public class AnalyzerApp implements CommandLineRunner {
         Collection<String> activeProfiles = Arrays.asList(env.getActiveProfiles());
         if (
             activeProfiles.contains(JHipsterConstants.SPRING_PROFILE_DEVELOPMENT) &&
-            activeProfiles.contains(JHipsterConstants.SPRING_PROFILE_PRODUCTION)
+                activeProfiles.contains(JHipsterConstants.SPRING_PROFILE_PRODUCTION)
         ) {
             log.error(
                 "You have misconfigured your application! It should not run " + "with both the 'dev' and 'prod' profiles at the same time."
@@ -59,7 +69,7 @@ public class AnalyzerApp implements CommandLineRunner {
         }
         if (
             activeProfiles.contains(JHipsterConstants.SPRING_PROFILE_DEVELOPMENT) &&
-            activeProfiles.contains(JHipsterConstants.SPRING_PROFILE_CLOUD)
+                activeProfiles.contains(JHipsterConstants.SPRING_PROFILE_CLOUD)
         ) {
             log.error(
                 "You have misconfigured your application! It should not " + "run with both the 'dev' and 'cloud' profiles at the same time."
@@ -94,10 +104,10 @@ public class AnalyzerApp implements CommandLineRunner {
         }
         log.info(
             "\n----------------------------------------------------------\n\t" +
-            "Application '{}' is running! Access URLs:\n\t" +
-            "Local: \t\t{}://localhost:{}{}\n\t" +
-            "External: \t{}://{}:{}{}\n\t" +
-            "Profile(s): \t{}\n----------------------------------------------------------",
+                "Application '{}' is running! Access URLs:\n\t" +
+                "Local: \t\t{}://localhost:{}{}\n\t" +
+                "External: \t{}://{}:{}{}\n\t" +
+                "Profile(s): \t{}\n----------------------------------------------------------",
             env.getProperty("spring.application.name"),
             protocol,
             serverPort,
@@ -112,8 +122,9 @@ public class AnalyzerApp implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        //portScrapper.buildPorts();
+        //portScrapper.getWellKnownPorts();
+        System.out.println("1234");
+        dashboardService.buildDashboardDTO().forEach(System.out::println);
 
-        snmpReader.getTraps();
     }
 }

@@ -5,6 +5,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
@@ -22,7 +23,7 @@ import org.springframework.stereotype.Service;
 public class CSVFileReader {
 
     private static final String csvPath =
-        "C:\\Users\\steph\\Documents\\Projects\\analyser\\src\\main\\resources\\static\\nfcapd.202205020100.csv";
+        "/home/tattea/test";
 
     @Autowired
     public CSVFileReader() {}
@@ -30,7 +31,7 @@ public class CSVFileReader {
     public List<NetflowDTO> getNetflows(String csvPath) {
         List<List<String>> records = new ArrayList<>();
 
-        try (BufferedReader br = new BufferedReader(new FileReader(csvPath))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(csvPath, StandardCharsets.UTF_8))) {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] values = line.trim().split(" ");

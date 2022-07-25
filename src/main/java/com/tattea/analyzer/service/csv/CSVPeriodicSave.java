@@ -46,13 +46,14 @@ public class CSVPeriodicSave {
         this.fileCommandRunner = fileCommandRunner;
     }
 
+
     /*
      * This method (Cron Job) will trigger at each interval to save all the csv from netflow in csv Directory
      * Then, after successful save into the MySQL database, we can query the data afterwards
 
      */
     @SneakyThrows
-    @Scheduled(cron = "*/20 * * * * *") // will save each 10 seconds for eg : "*/10 * * * * *"
+    //@Scheduled(cron = "*/20 * * * * *") // will save each 10 seconds for eg : "*/10 * * * * *"
     public void triggerAllCSVSave() {
         log.info("CSV Save at : {}", LocalDateTime.now()); // create a log in order to debug/check if the saves are successful
 
@@ -62,13 +63,17 @@ public class CSVPeriodicSave {
             Thread.sleep(5000 ); // wait 5 seconds
 
             //
+
+
             getAllCSVFromDirectory()
                 .stream()
                 .map(File::getAbsolutePath) // get path from each file
                 .flatMap(csvPath -> csvFileReader.getNetflows(csvPath).stream()) // get netflow data from each file
                 .forEach(netflowService::save);
 
+
             fileCommandRunner.cutAllCSVFiles(csvDirectory);
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -93,6 +98,7 @@ public class CSVPeriodicSave {
             .filter(Objects::nonNull)
             .flatMap(Arrays::stream)
             .filter(File::isFile) // check if the file is a file or a directory
+            .filter(file -> !file.getName().contains("current"))
             .filter(file -> !FilenameUtils.getExtension(file.getName()).equals(CSV)) // ignore all csv
             .forEach(file -> convertToCSV(file.getName()));
     }

@@ -100,6 +100,7 @@
   },
   "defaultProject": "analyzer",
   "cli": {
+    "analytics": "5fc7ea23-3483-4c37-a739-9f646f7a2216",
     "cache": {
       "enabled": true,
       "path": "./target/angular/",
