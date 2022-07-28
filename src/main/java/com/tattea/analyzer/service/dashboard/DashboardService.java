@@ -11,6 +11,8 @@ import com.tattea.analyzer.service.dto.PortDTO;
 import com.tattea.analyzer.service.host.HostAPIService;
 import com.tattea.analyzer.service.host.HostAPIService.IpAPIResponse;
 import com.tattea.analyzer.service.mapper.NetflowMapper;
+import com.tattea.analyzer.web.rest.DashboardResource;
+import lombok.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
@@ -64,7 +66,6 @@ public class DashboardService {
 
         return netflowRepository.findAll()
             .stream()
-            .limit(300)
             .map(netflow -> {
 
                 //List<Netflow> netflows = netflowRepository.findAll();
@@ -87,7 +88,7 @@ public class DashboardService {
 
     private HostDTO getHostDTO(Netflow netflow, Function<Netflow, String> function) {
         return Optional.of(netflow)
-            .map(function::apply)
+            .map(function)
             .map(s -> s.split(":")[0])
             .map(ip -> hostService.findOneByIp(ip).orElse(HostDTO.builder()
                 .hostName("Host ".concat(ip))
@@ -98,14 +99,28 @@ public class DashboardService {
 
     private PortDTO getPortDTO(Netflow netflow, Function<Netflow, String> function) {
         return Optional.of(netflow)
-            .map(function::apply)
+            .map(function)
             .map(s -> s.split(":")[1])
             .filter(port->!port.contains("."))
             .map(port -> portService.findOneByPort(Long.valueOf(port)).orElse(PortDTO.builder()
-                    .port(Long.valueOf(port))
-                    .name("Port Number ".concat(port))
+                .port(Long.valueOf(port))
+                .name("Port Number ".concat(port))
                 .build()))
             .orElse(PortDTO.builder().build());
+    }
+
+    public List<PortStatistic> getPortStats() {
+        return this.buildDashboardDTO()
+            .stream()
+            .collect(Collectors.groupingBy(DashboardDTO::getDstPort,
+                Collectors.summingInt(foo -> getBytes(foo.getNetflowDTO().getBytes()))))
+            .entrySet()
+            .stream()
+            .map(portDTOIntegerEntry -> PortStatistic.builder()
+                .portDTO(portDTOIntegerEntry.getKey())
+                .bytesSum(portDTOIntegerEntry.getValue())
+                .build())
+            .collect(Collectors.toList());
     }
 
     // TODO : Build Hosts
@@ -165,5 +180,25 @@ public class DashboardService {
 
     public HostDTO buildHostDTO(IpAPIResponse apiResponse, String ipAddress) {
         return HostDTO.builder().ipAddress(ipAddress).asname(apiResponse.getAsname()).org(apiResponse.getOrg()).build();
+    }
+
+    private Integer getBytes(String bytes) {
+        double p = bytes.contains("M") ?
+            Double.parseDouble(bytes.replace("M", "")) * 1000000 : Double.parseDouble(bytes);
+        return (int) p;
+    }
+
+    @Builder
+    @NoArgsConstructor
+    @AllArgsConstructor
+    @ToString
+    @Getter
+    @Setter
+    public static class PortStatistic {
+
+        private PortDTO portDTO;
+
+        private Integer bytesSum;
+
     }
 }

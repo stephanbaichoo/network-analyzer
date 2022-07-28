@@ -1,4 +1,38 @@
+<mat-drawer-container xmlns:padding="http://www.w3.org/1999/xhtml">
 
-<ul *ngFor="let item of iPortStatistics;">
-  <li> {{item?.portDTO?.name}} | {{item.bytesSum}}</li>
-  </ul>
+  <mat-divider></mat-divider>
+  <br>
+  <div fxFlex="200"
+       fxLayoutAlign="center"
+       class="item"
+  >
+    <mat-card >
+      <mat-card-title>Top Port Traffic Used</mat-card-title>
+      <mat-card-subtitle>From {{ getTodayDate() }}</mat-card-subtitle>
+    </mat-card>
+
+    <br>
+  </div>
+
+  <mat-card fxFlex="90">
+    <mat-card-title>Objective : Port Traffic Analysis</mat-card-title>
+    <mat-card-content>
+      <p>
+        The following gives information about the Port Traffic through metrics from Netflow Logs depicted
+        in tabular representations of ingoing and outgoing traffic, area charts of the same and comparison from
+        different points in time.
+      </p>
+    </mat-card-content>
+  </mat-card>
+  <br>
+
+  <mat-card>
+
+  </mat-card>
+
+</mat-drawer-container>
+
+<br>
+
+
+

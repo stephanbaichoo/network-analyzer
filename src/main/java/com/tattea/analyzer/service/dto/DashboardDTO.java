@@ -10,13 +10,14 @@ import java.io.Serializable;
 @ToString
 @Getter
 @Setter
+@Data
 public class DashboardDTO implements Serializable {
 
     private NetflowDTO netflowDTO;
 
-    private PortDTO srcPort;
+    public PortDTO srcPort;
 
-    private PortDTO dstPort;
+    public PortDTO dstPort;
 
     private HostDTO srcHost;
 

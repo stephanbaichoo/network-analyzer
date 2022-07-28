@@ -2,9 +2,8 @@ package com.tattea.analyzer.service.dto;
 
 import java.io.Serializable;
 import java.util.Objects;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
+
+import lombok.*;
 
 /**
  * A DTO for the {@link com.tattea.analyzer.domain.Port} entity.
@@ -12,6 +11,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
 public class PortDTO implements Serializable {
 
     private Long id;

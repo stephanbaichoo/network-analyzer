@@ -12,7 +12,7 @@ public class FileCommandRunner {
 
     //private static final String csvDirectory = "";
 
-    public void cutAllCSVFiles(String csvDirectory) {
+    public void cutAllCSVFiles(String fileName) {
 
         //File f = new File("/home/tattea/test");
         //File[] matchingFiles = f.listFiles((dir, name) -> name.startsWith("nfcapd.current"));
@@ -21,7 +21,9 @@ public class FileCommandRunner {
         //mv /home/tattea/test1/!(nfcapd.current.13589)  /home/tattea/test/tartget1
          runCommand(String.format("mv /home/tattea/test/!(nfcapd.current.63303) /home/tattea/test1"));
         runCommand(String.format("mv //home/tattea/NetFlow_cvs /home/tattea/test1"));
-         runCommand(String.format("mv /home/tattea/test/nfcapd.202207180025 /home/tattea/test1", csvDirectory));
+         runCommand(String.format("mv /home/tattea/test/%s /home/tattea/test1", fileName));
+        runCommand(String.format("mv /home/tattea/test/%s.csv /home/tattea/test1", fileName));
+
 
     }
 

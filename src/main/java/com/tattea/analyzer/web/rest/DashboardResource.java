@@ -2,8 +2,8 @@ package com.tattea.analyzer.web.rest;
 
 import com.tattea.analyzer.service.dashboard.DashboardService;
 import com.tattea.analyzer.service.dto.DashboardDTO;
-import com.tattea.analyzer.service.dto.PortDTO;
-import lombok.*;
+import com.tattea.analyzer.service.port.PortDashboardService;
+import com.tattea.analyzer.service.port.PortDashboardService.MostPortDataSummary;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * REST controller for managing {@link com.tattea.analyzer.domain}.
@@ -22,9 +21,12 @@ public class DashboardResource {
 
     private final DashboardService dashboardService;
 
+    private final PortDashboardService portDashboardService;
+
     @Autowired
-    public DashboardResource(DashboardService dashboardService) {
+    public DashboardResource(DashboardService dashboardService, PortDashboardService portDashboardService) {
         this.dashboardService = dashboardService;
+        this.portDashboardService = portDashboardService;
     }
 
     @GetMapping("/dashboard")
@@ -33,40 +35,18 @@ public class DashboardResource {
     }
 
     @GetMapping("/dashboard/port")
-    public ResponseEntity<List<PortStatistic>> getPortStats() {
-        List<PortStatistic> collect = dashboardService.buildDashboardDTO()
-            .stream()
-            .collect(Collectors.groupingBy(DashboardDTO::getDstPort,
-                Collectors.summingInt(foo -> getBytes(foo.getNetflowDTO().getBytes()))))
-            .entrySet()
-            .stream()
-            .map(portDTOIntegerEntry -> PortStatistic.builder()
-                .portDTO(portDTOIntegerEntry.getKey())
-                .bytesSum(portDTOIntegerEntry.getValue())
-                .build())
-            .collect(Collectors.toList());
-
-        return ResponseEntity.ok(collect);
+    public ResponseEntity<List<DashboardService.PortStatistic>> getPortStats() {
+        return ResponseEntity.ok(dashboardService.getPortStats());
     }
 
-    private Integer getBytes(String bytes) {
-        double p = bytes.contains("M") ?
-        Double.parseDouble(bytes.replace("M", "")) * 1000000 : Double.parseDouble(bytes);
-        return (int) p;
+    @GetMapping("/dashboard/port/outgoing")
+    public ResponseEntity<List<MostPortDataSummary>> getMostTrafficOutgoingPortsYesterdaySegregated() {
+        return ResponseEntity.ok(portDashboardService.getMostTrafficOutgoingPortsYesterdaySegregated());
     }
 
-    @Builder
-    @NoArgsConstructor
-    @AllArgsConstructor
-    @ToString
-    @Getter
-    @Setter
-    private static class PortStatistic {
-
-        private PortDTO portDTO;
-
-        private Integer bytesSum;
-
+    @GetMapping("/dashboard/port/ingoing")
+    public ResponseEntity<List<MostPortDataSummary>> getMostTrafficIngoingPortsYesterdaySegregated() {
+        return ResponseEntity.ok(portDashboardService.getMostTrafficIngoingPortsYesterdaySegregated());
     }
 
 }

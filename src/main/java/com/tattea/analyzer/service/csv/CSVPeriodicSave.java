@@ -53,7 +53,7 @@ public class CSVPeriodicSave {
 
      */
     @SneakyThrows
-    //@Scheduled(cron = "*/20 * * * * *") // will save each 10 seconds for eg : "*/10 * * * * *"
+    //@Scheduled(cron = "*/40 * * * * *") // will save each 10 seconds for eg : "*/10 * * * * *"
     public void triggerAllCSVSave() {
         log.info("CSV Save at : {}", LocalDateTime.now()); // create a log in order to debug/check if the saves are successful
 
@@ -72,8 +72,7 @@ public class CSVPeriodicSave {
                 .forEach(netflowService::save);
 
 
-            fileCommandRunner.cutAllCSVFiles(csvDirectory);
-
+            fndumpsMoveToCsv();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -101,14 +100,33 @@ public class CSVPeriodicSave {
             .filter(file -> !file.getName().contains("current"))
             .filter(file -> !FilenameUtils.getExtension(file.getName()).equals(CSV)) // ignore all csv
             .forEach(file -> convertToCSV(file.getName()));
+
+
     }
 
+    public void fndumpsMoveToCsv() {
+        Stream.of(csvDirectory)
+            .map(File::new) // convert the string to a new file object
+            .map(File::listFiles)
+            .filter(Objects::nonNull)
+            .flatMap(Arrays::stream)
+            .filter(File::isFile) // check if the file is a file or a directory
+            .filter(file -> !file.getName().contains("current"))
+            .filter(file -> !FilenameUtils.getExtension(file.getName()).equals(CSV)) // ignore all csv
+            .forEach(file -> Moveallfile(file.getName()));
+
+
+    }
     private void convertToCSV(String fileName) {
         String nfdumpCmd = String.format("nfdump -r %s -n 0  -O bps -o extended > %s.csv", fileName, fileName);
         String cd = "cd ".concat(csvDirectory);
         fileCommandRunner.runCommand(fileCommandRunner.buildListCmd(List.of(cd, nfdumpCmd)));
-    }
 
+    }
+    private void Moveallfile(String fileName) {
+        fileCommandRunner.cutAllCSVFiles(fileName);
+
+    }
 }
 
 

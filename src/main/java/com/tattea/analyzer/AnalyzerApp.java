@@ -123,8 +123,8 @@ public class AnalyzerApp implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         //portScrapper.getWellKnownPorts();
-        System.out.println("1234");
-        dashboardService.buildDashboardDTO().forEach(System.out::println);
+        //System.out.println("1234");
+        //dashboardService.buildDashboardDTO().forEach(System.out::println);
 
     }
 }
