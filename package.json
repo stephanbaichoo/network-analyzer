@@ -95,7 +95,7 @@
     "dayjs": "1.11.0",
     "flexlayout": "^1.0.6",
     "hammerjs": "^2.0.8",
-    "highcharts": "^7.2.0",
+    "highcharts": "^7.2.2",
     "highcharts-angular": "^2.4.0",
     "install": "^0.13.0",
     "ngx-infinite-scroll": "13.0.1",

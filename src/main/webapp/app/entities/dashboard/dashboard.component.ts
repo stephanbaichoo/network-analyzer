@@ -1,7 +1,9 @@
-import {Component, OnInit} from '@angular/core';
-import {DashboardService} from './service/dashboard.service';
-import {IPortStatistics} from "./model/dashboard.model";
-import {MostPortDataSummary} from "./model/IMostPortDataSummary.model";
+import { Component, Input, OnInit } from '@angular/core';
+import { DashboardService } from './service/dashboard.service';
+import { IPortStatistics } from './model/dashboard.model';
+import { MostPortDataSummary } from './model/IMostPortDataSummary.model';
+import * as Highcharts from 'highcharts';
+import HC_exporting from 'highcharts/modules/exporting';
 
 @Component({
   selector: 'jhi-dashboard',
@@ -9,63 +11,127 @@ import {MostPortDataSummary} from "./model/IMostPortDataSummary.model";
   styleUrls: ['./dashboard.component.scss'],
 })
 export class DashboardComponent implements OnInit {
+  chartOptions: any = {};
+  @Input() data: any = [];
+
+  Highcharts = Highcharts;
+
   iPortStatistics?: IPortStatistics[];
 
   iMostPortDataSummary?: MostPortDataSummary[];
 
   bigChart = [];
 
-  constructor(protected dashboardService: DashboardService) {
-  }
+  chartOptionsCard = {};
+
+  constructor(protected dashboardService: DashboardService) {}
 
   ngOnInit(): void {
     /* eslint-disable no-console */
 
+    // Area Chart for Outgoing Traffic
+    this.chartOptions = {
+      chart: {
+        type: 'area',
+      },
+      title: {
+        text: 'Outgoing Traffic From The most Popular Ports',
+      },
+      subtitle: {
+        text: 'Port Data Usage Taken As from Yesterday. Bytes vs Last Hours',
+      },
+      tooltip: {
+        split: true,
+        valueSuffix: ' Mbytes',
+      },
+      credits: {
+        enabled: false,
+      },
+      exporting: {
+        enabled: true,
+      },
+      series: this.bigCharts(),
+    };
+
+    this.chartOptionsCard = {
+      chart: {
+        type: 'area',
+        backgroundColor: null,
+        borderWidth: 0,
+        margin: [2, 2, 2, 2],
+        height: 60,
+      },
+      title: {
+        text: null,
+      },
+      subtitle: {
+        text: null,
+      },
+      tooltip: {
+        split: true,
+        outside: true,
+      },
+      legend: {
+        enabled: false,
+      },
+      credits: {
+        enabled: false,
+      },
+      exporting: {
+        enabled: false,
+      },
+      xAxis: {
+        labels: {
+          enabled: false,
+        },
+        title: {
+          text: null,
+        },
+        startOnTick: false,
+        endOnTick: false,
+        tickOptions: [],
+      },
+      yAxis: {
+        labels: {
+          enabled: false,
+        },
+        title: {
+          text: null,
+        },
+        startOnTick: false,
+        endOnTick: false,
+        tickOptions: [],
+      },
+      series: [
+        {
+          data: [23, 45, 67, 87],
+        },
+      ],
+    };
+
     this.getMostTrafficOutgoingPortsYesterdaySegregated();
 
-    this.bigCharts();
+    this.bigChart = this.bigCharts();
+
+    console.log(this.getRandomData());
+
+    console.log(this.bigChart);
+
+    HC_exporting(Highcharts);
+
     /* eslint-disable no-console */
   }
 
   getPorts(): void {
-    this.dashboardService.getPorts().subscribe((result) => {
+    this.dashboardService.getPorts().subscribe(result => {
       this.iPortStatistics = result;
     });
   }
 
   getMostTrafficOutgoingPortsYesterdaySegregated(): void {
-    type iiMostPortDataSummary = Array<MostPortDataSummary>;
-
-
-/*    [{
-        name: 'DNS',
-        data: [502, 635, 809, 947, 1402, 3634, 5268]
-      }, {
-        name: 'HTTPS',
-        data: [106, 107, 111, 133, 221, 767, 1766]
-      }, {
-        name: 'HTTP',
-        data: [163, 203, 276, 408, 547, 729, 628]
-      }, {
-        name: 'SSH',
-        data: [18, 31, 54, 156, 339, 818, 1201]
-      }, {
-        name: 'SNMP',
-        data: [2, 2, 2, 6, 13, 30, 46]
-      }]
-    }*/
-
-/*    var ports: iiMostPortDataSummary = [
-      new MostPortDataSummary('0', 'DNS', '53', 67544),
-      new MostPortDataSummary('0', 'HTTPS', '443', 67044),
-      new MostPortDataSummary('0', 'HTTP', '80', 123544),
-      new MostPortDataSummary('0', 'SNMP', '61', 6744),
-      new MostPortDataSummary('0', 'TLS', '440', 674),
-    ];*/
-
-    this.dashboardService.getMostTrafficOutgoingPortsYesterdaySegregated().subscribe((result) => {
+    this.dashboardService.getMostTrafficOutgoingPortsYesterdaySegregated().subscribe(result => {
       this.iMostPortDataSummary = result;
-      console.log(result)
+      console.log(...result);
     });
   }
 
@@ -79,22 +145,32 @@ export class DashboardComponent implements OnInit {
     return new Date(new Date().getTime());
   }
 
-  bigCharts() {
-    return [{
-      name: 'DNS',
-      data: [502, 635, 809, 947, 1402, 3634, 5268]
-    }, {
-      name: 'HTTPS',
-      data: [106, 107, 111, 133, 221, 767, 1766]
-    }, {
-      name: 'HTTP',
-      data: [163, 203, 276, 408, 547, 729, 628]
-    }, {
-      name: 'SSH',
-      data: [18, 31, 54, 156, 339, 818, 1201]
-    }, {
-      name: 'SNMP',
-      data: [2, 2, 2, 6, 13, 30, 46]
-    }];
+  getRandomData(): number[] {
+    return [...Array(this.getTodayDate().getHours() + 2)].map(() => Math.floor(Math.random() * 3000));
+  }
+
+  bigCharts(): any {
+    return [
+      {
+        name: 'DNS',
+        data: this.getRandomData(),
+      },
+      {
+        name: 'HTTPS',
+        data: this.getRandomData(),
+      },
+      {
+        name: 'HTTP',
+        data: this.getRandomData(),
+      },
+      {
+        name: 'SSH',
+        data: this.getRandomData(),
+      },
+      {
+        name: 'SNMP',
+        data: this.getRandomData(),
+      },
+    ];
   }
 }

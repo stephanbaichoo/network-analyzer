@@ -505,7 +505,7 @@
                         </webResources>
                     </configuration>
                 </plugin>
-<!--                <plugin>
+              <!-- <plugin>
                     <groupId>com.github.eirslett</groupId>
                     <artifactId>frontend-maven-plugin</artifactId>
                     <version>${frontend-maven-plugin.version}</version>
@@ -532,7 +532,7 @@
                     </executions>
                 </plugin>
 
-                <plugin>
+               <!-- <plugin>
                     <groupId>io.github.git-commit-id</groupId>
                     <artifactId>git-commit-id-maven-plugin</artifactId>
                     <version>${git-commit-id-plugin.version}</version>
@@ -553,7 +553,7 @@
                             <includeOnlyProperty>^git.branch$</includeOnlyProperty>
                         </includeOnlyProperties>
                     </configuration>
-                </plugin>
+                </plugin>-->
                 <plugin>
                     <groupId>org.gaul</groupId>
                     <artifactId>modernizer-maven-plugin</artifactId>
@@ -907,12 +907,12 @@
                             <quiet>true</quiet>
                         </configuration>
                     </plugin>
-                    <!-- <plugin>
+                     <plugin>
                          <groupId>org.apache.maven.plugins</groupId>
                          <artifactId>maven-antrun-plugin</artifactId>
                          <version>${maven-antrun-plugin.version}</version>
                          <executions>
-                             <execution>
+                            <!-- <execution>
                                  <id>eval-frontend-checksum</id>
                                  <phase>generate-resources</phase>
                                  <goals>
@@ -930,11 +930,11 @@
                                      </target>
                                      <exportAntProperties>true</exportAntProperties>
                                  </configuration>
-                             </execution>
+                             </execution>-->
                          </executions>
-                     </plugin>-->
-<!--
-                    <plugin>
+                     </plugin>
+
+                    <!--<plugin>
                         <groupId>com.github.eirslett</groupId>
                         <artifactId>frontend-maven-plugin</artifactId>
                         <executions>
@@ -969,8 +969,8 @@
                                 </configuration>
                             </execution>
                         </executions>
-                    </plugin>
--->
+                    </plugin>-->
+
                 </plugins>
             </build>
             <properties>
@@ -1141,10 +1141,10 @@
                         </executions>
                     </plugin>
 -->
-                    <plugin>
-                        <groupId>io.github.git-commit-id</groupId>
-                        <artifactId>git-commit-id-maven-plugin</artifactId>
-                    </plugin>
+<!--                    <plugin>-->
+<!--                        <groupId>io.github.git-commit-id</groupId>-->
+<!--                        <artifactId>git-commit-id-maven-plugin</artifactId>-->
+<!--                    </plugin>-->
                 </plugins>
             </build>
             <properties>
@@ -1256,9 +1256,9 @@
                                                     <goal>npm</goal>
                                                 </goals>
                                             </pluginExecutionFilter>-->
-                                            <action>
+<!--                                            <action>
                                                 <ignore/>
-                                            </action>
+                                            </action>-->
                                         </pluginExecution>
                                     </pluginExecutions>
                                 </lifecycleMappingMetadata>

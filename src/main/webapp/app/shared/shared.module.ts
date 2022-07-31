@@ -10,9 +10,11 @@ import { FormatMediumDatePipe } from './date/format-medium-date.pipe';
 import { SortByDirective } from './sort/sort-by.directive';
 import { SortDirective } from './sort/sort.directive';
 import { ItemCountComponent } from './pagination/item-count.component';
+import { AreaComponent } from './widget/area/area.component';
+import { HighchartsChartModule } from 'highcharts-angular';
 
 @NgModule({
-  imports: [SharedLibsModule],
+  imports: [SharedLibsModule, HighchartsChartModule],
   declarations: [
     AlertComponent,
     AlertErrorComponent,
@@ -23,6 +25,7 @@ import { ItemCountComponent } from './pagination/item-count.component';
     SortByDirective,
     SortDirective,
     ItemCountComponent,
+    AreaComponent,
   ],
   exports: [
     SharedLibsModule,

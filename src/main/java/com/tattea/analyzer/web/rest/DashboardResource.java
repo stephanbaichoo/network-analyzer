@@ -1,16 +1,15 @@
 package com.tattea.analyzer.web.rest;
 
+import com.tattea.analyzer.service.GeneralService;
 import com.tattea.analyzer.service.dashboard.DashboardService;
 import com.tattea.analyzer.service.dto.DashboardDTO;
 import com.tattea.analyzer.service.port.PortDashboardService;
-import com.tattea.analyzer.service.port.PortDashboardService.MostPortDataSummary;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 /**
  * REST controller for managing {@link com.tattea.analyzer.domain}.
@@ -23,10 +22,13 @@ public class DashboardResource {
 
     private final PortDashboardService portDashboardService;
 
+    private final GeneralService generalService;
+
     @Autowired
-    public DashboardResource(DashboardService dashboardService, PortDashboardService portDashboardService) {
+    public DashboardResource(DashboardService dashboardService, PortDashboardService portDashboardService, GeneralService generalService) {
         this.dashboardService = dashboardService;
         this.portDashboardService = portDashboardService;
+        this.generalService = generalService;
     }
 
     @GetMapping("/dashboard")
@@ -40,13 +42,12 @@ public class DashboardResource {
     }
 
     @GetMapping("/dashboard/port/outgoing")
-    public ResponseEntity<List<MostPortDataSummary>> getMostTrafficOutgoingPortsYesterdaySegregated() {
+    public ResponseEntity<List<PortDashboardService.PortWidgetData>> getMostTrafficOutgoingPortsYesterdaySegregated() {
         return ResponseEntity.ok(portDashboardService.getMostTrafficOutgoingPortsYesterdaySegregated());
     }
 
     @GetMapping("/dashboard/port/ingoing")
-    public ResponseEntity<List<MostPortDataSummary>> getMostTrafficIngoingPortsYesterdaySegregated() {
+    public ResponseEntity<List<PortDashboardService.PortWidgetData>> getMostTrafficIngoingPortsYesterdaySegregated() {
         return ResponseEntity.ok(portDashboardService.getMostTrafficIngoingPortsYesterdaySegregated());
     }
-
 }

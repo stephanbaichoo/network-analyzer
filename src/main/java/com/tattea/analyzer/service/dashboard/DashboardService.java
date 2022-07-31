@@ -12,18 +12,18 @@ import com.tattea.analyzer.service.host.HostAPIService;
 import com.tattea.analyzer.service.host.HostAPIService.IpAPIResponse;
 import com.tattea.analyzer.service.mapper.NetflowMapper;
 import com.tattea.analyzer.web.rest.DashboardResource;
-import lombok.*;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.Cacheable;
-import org.springframework.stereotype.Service;
-
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import lombok.*;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Service;
 
 @Slf4j
 @Service
@@ -64,10 +64,10 @@ public class DashboardService {
     public List<DashboardDTO> buildDashboardDTO() {
         log.info("Build All Dashboard Data at".concat(LocalDateTime.now().toString()));
 
-        return netflowRepository.findAll()
+        return netflowRepository
+            .findAll()
             .stream()
             .map(netflow -> {
-
                 //List<Netflow> netflows = netflowRepository.findAll();
 
                 HostDTO dstHostDTO = getHostDTO(netflow, Netflow::getDstIp);
@@ -76,50 +76,52 @@ public class DashboardService {
                 PortDTO dstPortDTO = getPortDTO(netflow, Netflow::getDstIp);
                 PortDTO srcPortDTO = getPortDTO(netflow, Netflow::getSrcIp);
 
-                return DashboardDTO.builder()
+                return DashboardDTO
+                    .builder()
                     .netflowDTO(netflowMapper.toDto(netflow))
                     .dstHost(dstHostDTO)
                     .srcHost(srcHostDTO)
                     .dstPort(dstPortDTO)
                     .srcPort(srcPortDTO)
                     .build();
-            }).collect(Collectors.toList());
+            })
+            .collect(Collectors.toList());
     }
 
     private HostDTO getHostDTO(Netflow netflow, Function<Netflow, String> function) {
-        return Optional.of(netflow)
+        return Optional
+            .of(netflow)
             .map(function)
             .map(s -> s.split(":")[0])
-            .map(ip -> hostService.findOneByIp(ip).orElse(HostDTO.builder()
-                .hostName("Host ".concat(ip))
-                .ipAddress(ip)
-                .build()))
+            .map(ip -> hostService.findOneByIp(ip).orElse(HostDTO.builder().hostName("Host ".concat(ip)).ipAddress(ip).build()))
             .orElse(HostDTO.builder().build());
     }
 
     private PortDTO getPortDTO(Netflow netflow, Function<Netflow, String> function) {
-        return Optional.of(netflow)
+        return Optional
+            .of(netflow)
             .map(function)
             .map(s -> s.split(":")[1])
-            .filter(port->!port.contains("."))
-            .map(port -> portService.findOneByPort(Long.valueOf(port)).orElse(PortDTO.builder()
-                .port(Long.valueOf(port))
-                .name("Port Number ".concat(port))
-                .build()))
+            .filter(port -> !port.contains("."))
+            .map(port ->
+                portService
+                    .findOneByPort(Long.valueOf(port))
+                    .orElse(PortDTO.builder().port(Long.valueOf(port)).name("Port Number ".concat(port)).build())
+            )
             .orElse(PortDTO.builder().build());
     }
 
     public List<PortStatistic> getPortStats() {
         return this.buildDashboardDTO()
             .stream()
-            .collect(Collectors.groupingBy(DashboardDTO::getDstPort,
-                Collectors.summingInt(foo -> getBytes(foo.getNetflowDTO().getBytes()))))
+            .collect(
+                Collectors.groupingBy(DashboardDTO::getDstPort, Collectors.summingInt(foo -> getBytes(foo.getNetflowDTO().getBytes())))
+            )
             .entrySet()
             .stream()
-            .map(portDTOIntegerEntry -> PortStatistic.builder()
-                .portDTO(portDTOIntegerEntry.getKey())
-                .bytesSum(portDTOIntegerEntry.getValue())
-                .build())
+            .map(portDTOIntegerEntry ->
+                PortStatistic.builder().portDTO(portDTOIntegerEntry.getKey()).bytesSum(portDTOIntegerEntry.getValue()).build()
+            )
             .collect(Collectors.toList());
     }
 
@@ -150,7 +152,6 @@ public class DashboardService {
             )
             .forEach(hostService::save);
 
-
         // build routers
         List<String> routerIPAddresses = List.of("10.0.0.254");
 
@@ -164,10 +165,10 @@ public class DashboardService {
             .stream()
             .filter(ip -> routerIPAddresses.stream().anyMatch(ip::startsWith))
             .filter(ip -> hostService.findOneByIp(ip).isEmpty())
-            .map(ip -> HostDTO.builder().ipAddress(ip).hostName("Gateway Router-".concat(UUID.randomUUID().toString().substring(0, 5))).build()
+            .map(ip ->
+                HostDTO.builder().ipAddress(ip).hostName("Gateway Router-".concat(UUID.randomUUID().toString().substring(0, 5))).build()
             )
             .forEach(hostService::save);
-
 
         // build public hosts
         ipWithNoPorts
@@ -183,8 +184,7 @@ public class DashboardService {
     }
 
     private Integer getBytes(String bytes) {
-        double p = bytes.contains("M") ?
-            Double.parseDouble(bytes.replace("M", "")) * 1000000 : Double.parseDouble(bytes);
+        double p = bytes.contains("M") ? Double.parseDouble(bytes.replace("M", "")) * 1000000 : Double.parseDouble(bytes);
         return (int) p;
     }
 
@@ -199,6 +199,5 @@ public class DashboardService {
         private PortDTO portDTO;
 
         private Integer bytesSum;
-
     }
 }
