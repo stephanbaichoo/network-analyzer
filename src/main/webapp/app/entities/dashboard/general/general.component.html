@@ -1,14 +1,14 @@
-<mat-drawer-container xmlns:padding="http://www.w3.org/1999/xhtml">
+<mat-drawer-container>
   <mat-divider></mat-divider>
   <br />
   <div fxFlex="200" fxLayoutAlign="center" class="item">
     <mat-card>
       <mat-card-title>Top Port Traffic Used</mat-card-title>
-      <mat-card-subtitle>From </mat-card-subtitle>
+      <mat-card-subtitle>From</mat-card-subtitle>
     </mat-card>
+
     <br />
   </div>
-  <br />
 
   <mat-card fxFlex="90">
     <mat-card-title>Objective : Port Traffic Analysis</mat-card-title>
@@ -19,27 +19,98 @@
       </p>
     </mat-card-content>
   </mat-card>
+  <br />
 
-  <!--      <div class="text">
-        <h4>{{ label }}</h4>
+  <div fxLayout="row" fxLayoutAlign="space-around center" class="stats-cards">
+    <div>
+      <div class="text">
+        <h4>Traffic Trend : {{ label }}</h4>
 
         <span class="total">{{ total }}</span>
 
         <span>
-        <mat-icon color="primary"></mat-icon>
-    </span>
+          <mat-icon color="primary"></mat-icon>
+        </span>
 
-        <span class="description">
-        {{ percentage }}%
-    </span>
+        <span class="description"> {{ percentage }}% </span>
 
-        <span> of target</span>
-      </div>-->
+        <span class="text-small"> From Yesterday</span>
+      </div>
 
-  <div class="widget">
-    <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptionsCard" style="width: 100%; height: 60px; display: block">
-    </highcharts-chart>
+      <div class="text">
+        <span>Graph Showing Traffic Dynamics Over the Last four days</span>
+      </div>
+
+      <highcharts-chart
+        [Highcharts]="Highcharts"
+        [options]="chartOptionsCard"
+        style="width: 50%; height: 200px; display: block"
+      ></highcharts-chart>
+    </div>
+
+    <div>
+      <div class="text">
+        <h4>Traffic Trend : {{ label0 }}</h4>
+
+        <span class="total">{{ total0 }}</span>
+
+        <span>
+          <mat-icon color="primary"></mat-icon>
+        </span>
+
+        <span class="description"> {{ percentage0 }}% </span>
+
+        <span class="text-small"> From Yesterday</span>
+      </div>
+
+      <div class="text">
+        <span>Graph Showing Traffic Dynamics Over the Last four days</span>
+      </div>
+
+      <highcharts-chart
+        [Highcharts]="Highcharts"
+        [options]="chartOptionsCard0"
+        style="width: 40%; height: 200px; display: block"
+      ></highcharts-chart>
+    </div>
+
+    <div>
+      <div class="text">
+        <h4>SNMP Logs Trend : {{ label1 }}</h4>
+
+        <span class="total">{{ total1 }}</span>
+
+        <span>
+          <mat-icon color="primary"></mat-icon>
+        </span>
+
+        <span class="description"> {{ percentage1 }}% </span>
+
+        <span class="text-small"> From Yesterday</span>
+      </div>
+
+      <div class="text">
+        <span>Graph Showing SNMP Metric Logs Over the Last four days</span>
+      </div>
+
+      <highcharts-chart
+        [Highcharts]="Highcharts"
+        [options]="chartOptionsCard1"
+        style="width: 40%; height: 200px; display: block"
+      ></highcharts-chart>
+    </div>
   </div>
 
   <br />
+  <br />
+
+  <div fxLayout="row" fxLayoutAlign="space-around center" class="stats-cards">
+    <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions" style="width: 100%; display: block"> </highcharts-chart>
+
+    <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions0" style="width: 100%; display: block"> </highcharts-chart>
+
+    <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions1" style="width: 100%; display: block"> </highcharts-chart>
+  </div>
 </mat-drawer-container>
+
+<br />

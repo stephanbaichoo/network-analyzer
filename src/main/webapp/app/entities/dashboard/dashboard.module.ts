@@ -16,7 +16,6 @@ import { SharedModule } from '../../shared/shared.module';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { HostComponent } from './host/host.component';
 import { SnmpComponent } from './snmp/snmp.component';
-import { GeneralComponent } from './general/general.component';
 
 @NgModule({
   declarations: [DashboardComponent, HostComponent, SnmpComponent],

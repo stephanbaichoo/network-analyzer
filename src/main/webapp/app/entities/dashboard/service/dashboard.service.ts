@@ -26,4 +26,29 @@ export class DashboardService {
     const endpointFor = this.applicationConfigService.getEndpointFor('api/general/traffic/bytes');
     return this.http.get<number[]>(endpointFor);
   }
+
+  getLastFourPacketsSum(): Observable<number[]> {
+    const endpointFor = this.applicationConfigService.getEndpointFor('api/general/traffic/packets');
+    return this.http.get<number[]>(endpointFor);
+  }
+
+  getLastFourSNMPLogsCount(): Observable<number[]> {
+    const endpointFor = this.applicationConfigService.getEndpointFor('api/general/traffic/snmp');
+    return this.http.get<number[]>(endpointFor);
+  }
+
+  getUDPTCPDataPerHour(): Observable<number[]> {
+    const endpointFor = this.applicationConfigService.getEndpointFor('api/general/protocol/hour');
+    return this.http.get<number[]>(endpointFor);
+  }
+
+  getUDPTCPDataYesterday(): Observable<number[]> {
+    const endpointFor = this.applicationConfigService.getEndpointFor('api/general/protocol/yesterday');
+    return this.http.get<number[]>(endpointFor);
+  }
+
+  getUDPTCPDataFourDays(): Observable<number[]> {
+    const endpointFor = this.applicationConfigService.getEndpointFor('api/general/protocol/four');
+    return this.http.get<number[]>(endpointFor);
+  }
 }
