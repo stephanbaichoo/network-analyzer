@@ -1,9 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { DashboardService } from './service/dashboard.service';
-import { IPortStatistics } from './model/dashboard.model';
+import { IPortStatistics, MostPortDataTable } from './model/dashboard.model';
 import { Data, MostPortDataSummary } from './model/IMostPortDataSummary.model';
 import * as Highcharts from 'highcharts';
 import HC_exporting from 'highcharts/modules/exporting';
+import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
   selector: 'jhi-dashboard',
@@ -18,6 +19,8 @@ export class DashboardComponent implements OnInit {
 
   iPortStatistics?: IPortStatistics[];
 
+  outgoingtable?: MostPortDataTable[];
+
   stats?: Data[];
 
   iMostPortDataSummary?: MostPortDataSummary[];
@@ -25,6 +28,10 @@ export class DashboardComponent implements OnInit {
   bigChart = [];
 
   chartOptionsCard = {};
+
+  dataSource: any;
+
+  displayedColumns: string[] = ['portname', 'OutgoingBytesSum', 'OutgoingPacketsSum'];
 
   constructor(protected dashboardService: DashboardService) {}
 
@@ -67,6 +74,12 @@ export class DashboardComponent implements OnInit {
       };
 
       HC_exporting(Highcharts);
+    });
+
+    this.dashboardService.getMostOutgoingPortDataTableYesterday().subscribe(result => {
+      this.outgoingtable = result;
+
+      this.dataSource = new MatTableDataSource<MostPortDataTable>(this.outgoingtable);
     });
 
     /* eslint-disable no-console */

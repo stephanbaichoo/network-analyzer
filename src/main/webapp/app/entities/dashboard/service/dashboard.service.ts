@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { ApplicationConfigService } from 'app/core/config/application-config.service';
-import { IPortStatistics } from '../model/dashboard.model';
+import { IPortStatistics, MostPortDataTable } from '../model/dashboard.model';
 import { Data } from '../model/IMostPortDataSummary.model';
 
 export type EntityResponseType = HttpResponse<IPortStatistics>;
@@ -50,5 +50,10 @@ export class DashboardService {
   getUDPTCPDataFourDays(): Observable<number[]> {
     const endpointFor = this.applicationConfigService.getEndpointFor('api/general/protocol/four');
     return this.http.get<number[]>(endpointFor);
+  }
+
+  getMostOutgoingPortDataTableYesterday(): Observable<MostPortDataTable[]> {
+    const endpointFor = this.applicationConfigService.getEndpointFor('api/dashboard/table/outgoing/yesterday');
+    return this.http.get<MostPortDataTable[]>(endpointFor);
   }
 }

@@ -50,4 +50,9 @@ public class DashboardResource {
     public ResponseEntity<List<PortDashboardService.PortWidgetData>> getMostTrafficIngoingPortsYesterdaySegregated() {
         return ResponseEntity.ok(portDashboardService.getMostTrafficIngoingPortsYesterdaySegregated());
     }
+
+    @GetMapping("/dashboard/table/outgoing/yesterday")
+    public ResponseEntity<List<PortDashboardService.MostPortDataTable>> getMostOutgoingPortDataTableYesterday() {
+        return ResponseEntity.ok(portDashboardService.getMostOutgoingPortDataTableYesterday());
+    }
 }

@@ -1,8 +1,8 @@
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
-@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 .item {
-  border-radius: .2em;
+  border-radius: 0.2em;
   color: #ffffff;
   font-family: sans-serif;
   font-size: 2em;
@@ -10,3 +10,12 @@
   text-transform: uppercase;
 }
 
+.stats-cards {
+  .mat-card {
+    overflow: hidden;
+  }
+}
+
+table {
+  width: 100%;
+}

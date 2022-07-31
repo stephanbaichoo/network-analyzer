@@ -243,7 +243,68 @@ public class PortDashboardService {
     }
 
     public List<MostPortDataTable> getMostOutgoingPortDataTableYesterday() {
-        return getMostPortDataTableForLast3Days(1, DashboardDTO::getDstPort);
+        return dashboardService
+            .buildDashboardDTO()
+            .stream()
+            .filter(dashboardDTO -> {
+                NetflowDTO netflowDTO = dashboardDTO.getNetflowDTO();
+                return (
+                    LocalDate.now().isEqual(netflowDTO.getDateFirstSeen()) ||
+                    LocalDate.now().minusDays(1).isEqual(netflowDTO.getDateFirstSeen())
+                );
+            })
+            .collect(Collectors.groupingBy(dashboardDTO -> dashboardDTO.getDstPort().getName(), Collectors.toList()))
+            .entrySet()
+            .stream()
+            .flatMap(Stream::of)
+            .map(stringListEntry -> {
+                // Port Number
+                String general_port = stringListEntry
+                    .getValue()
+                    .stream()
+                    .findFirst()
+                    .map(DashboardDTO::getDstPort)
+                    .map(PortDTO::getPort)
+                    .map(String::valueOf)
+                    .orElse("General Port");
+
+                // Description
+                String description = stringListEntry
+                    .getValue()
+                    .stream()
+                    .findFirst()
+                    .map(DashboardDTO::getDstPort)
+                    .map(PortDTO::getDescription)
+                    .orElse("See Port Info Page");
+
+                // OutgoingBytesSum
+                int outgoingBytesSum = stringListEntry
+                    .getValue()
+                    .stream()
+                    .map(DashboardDTO::getNetflowDTO)
+                    .map(NetflowDTO::getBytes)
+                    .mapToInt(PortDashboardService::getBytes)
+                    .sum();
+
+                // OutgoingPacketsSum
+                int outgoingPacketsSum = stringListEntry
+                    .getValue()
+                    .stream()
+                    .map(DashboardDTO::getNetflowDTO)
+                    .mapToInt(NetflowDTO::getPacketNo)
+                    .sum();
+
+                return MostPortDataTable
+                    .builder()
+                    .portName(stringListEntry.getKey())
+                    .portNumber(general_port)
+                    .hoverDescription(description)
+                    .OutgoingBytesSum(outgoingBytesSum)
+                    .OutgoingPacketsSum(outgoingPacketsSum)
+                    .build();
+            })
+            .filter(mostPortDataTable -> Long.valueOf(mostPortDataTable.getPortNumber()) < 2000)
+            .collect(Collectors.toList());
     }
 
     public List<MostPortDataTable> getMostIngoingPortDataTableYesterday() {
