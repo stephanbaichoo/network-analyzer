@@ -53,16 +53,28 @@ public class PortDashboardService {
                     LocalDate.now().minusDays(1).isEqual(netflowDTO.getDateFirstSeen())
                 );
             })
-            .map(dashboardDTO ->
-                MostPortData
+            .map(dashboardDTO -> {
+                MostPortData build = MostPortData
                     .builder()
                     .bytes(getBytes(dashboardDTO.getNetflowDTO().getBytes()))
                     .localTime(LocalTime.parse(dashboardDTO.getNetflowDTO().getTimeFirstSeen()))
                     .localDate(dashboardDTO.getNetflowDTO().getDateFirstSeen())
                     .portName(dashboardDTO.getDstPort().getName())
                     .portNumber(dashboardDTO.getDstPort().getPort().toString())
-                    .build()
-            )
+                    .build();
+
+                MostPortData build1 = MostPortData
+                    .builder()
+                    .bytes(getBytes(dashboardDTO.getNetflowDTO().getBytes()))
+                    .localTime(LocalTime.parse(dashboardDTO.getNetflowDTO().getTimeFirstSeen()))
+                    .localDate(dashboardDTO.getNetflowDTO().getDateFirstSeen())
+                    .portName(dashboardDTO.getSrcPort().getName())
+                    .portNumber(dashboardDTO.getSrcPort().getPort().toString())
+                    .build();
+
+                return Stream.of(build, build1);
+            })
+            .flatMap(mostPortDataStream -> mostPortDataStream)
             .filter(mostPortData -> Integer.parseInt(mostPortData.getPortNumber()) < 2000)
             .collect(Collectors.toList());
     }
